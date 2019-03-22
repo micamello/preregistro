@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/preregistro$
+RewriteRule . - [E=REWRITEBASE:/preregistro/]
+
+#Registrodatostest
+RewriteRule ^registrodatostest/?$ %{ENV:REWRITEBASE}index.php?mostrar=regtest&opcion=guardardatostest [L]
+
+#inicioTest
+RewriteRule ^test/?$ %{ENV:REWRITEBASE}index.php?mostrar=cuestionariom2 [L]
+
+RewriteRule ^gracias/?$ %{ENV:REWRITEBASE}index.php?mostrar=regtest&opcion=gracias [L]
+
+#RegistroRespuestas
+RewriteRule ^registroresp/?$ %{ENV:REWRITEBASE}index.php?mostrar=cuestionariom2&opcion=guardarresp [L]
+
+#Preregistro
+RewriteRule ^preregistro/?$ %{ENV:REWRITEBASE}index.php?mostrar=preregistro&opcion=guardardatos [L]

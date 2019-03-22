@@ -8,9 +8,7 @@ class Database{
   var $server;
   var $username;
   var $password;
-
   var $dbname;
-
   var $connection;
   var $query;
   var $resultSet;
@@ -42,12 +40,12 @@ class Database{
   }
 
   function selectDB(){  
-  if ( $this->dbname ){
-    return mysqli_select_db($this->connection,$this->dbname)or die("No se pudo conectar a la Base de Datos");
-  }
-  else{
-    return false;
-  } 
+    if ( $this->dbname ){
+      return mysqli_select_db($this->connection,$this->dbname)or die("No se pudo conectar a la Base de Datos");
+    }
+    else{
+      return false;
+    } 
   }
 
   function disconnect(){
@@ -70,16 +68,14 @@ class Database{
       if ( $i != 1 ){
         $col_list .= ',';
         $val_list .= ',';
-      }
-      
+      }      
       if($value === 'null'){
         $col_list .= $col;            
         $val_list .= "NULL";        
       }else{
         $col_list .= $col;            
         $val_list .= "'".utf8_decode($value)."'";
-      }
-      
+      }      
       /*$col_list .= $col;            
       $val_list .= "'".$value."'";*/
       $i++;
@@ -95,13 +91,11 @@ class Database{
   }
 
   function insert_multiple($table,$campos,$data){   
-
     $valores = '';
     foreach ($data as $key => $datos) {
       $valores .= '('.implode(',', $datos).'),';
     }
     $valores = substr($valores, 0,strlen($valores)-1);
-
     $query  = 'INSERT INTO ';
     $query .= $table;
     $query .= ' (';
