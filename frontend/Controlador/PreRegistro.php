@@ -104,7 +104,7 @@ class Controlador_PreRegistro extends Controlador_Base {
       }
       else{
         if(!preg_match('/^[a-zA-Z0-9]{6,}+$/u', $data['documento'])){
-          throw new Exception("Ingrese un pasaporte válido");
+          throw new Exception("Ingrese un pasaporte v\u00E1lido");
         }
       }
       $dni_verify = Modelo_Usuario::existeDni($data['documento']);
@@ -113,11 +113,11 @@ class Controlador_PreRegistro extends Controlador_Base {
       }
 
       if(!Utils::valida_telefono($data['telefono'])){
-        throw new Exception("El teléfono ingresado no es válido");
+        throw new Exception("El tel\u00E9fono ingresado no es v\u00E1lido");
       }
 
       if(!Utils::es_correo_valido($data['correo'])){
-        throw new Exception("El correo ingresado no es válido");
+        throw new Exception("El correo ingresado no es v\u00E1lido");
       }
 
       $correo_verify = Modelo_Usuario::existeCorreo($data['correo']);
