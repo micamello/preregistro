@@ -56,20 +56,7 @@
     <p><b><a href="https://www.microsoft.com/es-es/download/internet-explorer.aspx">Actualizar IE</a></b></p>
   </div>
   <?php } ?>
-<?php if(!isset($show_banner) && !isset($breadcrumbs)){ ?>
-  <?php } ?>
-    <!--mensajes de error y exito-->
-    <?php if (isset($sess_err_msg) && !empty($sess_err_msg)){?>
-      <div align="center" id="alerta" style="display:" class="alert alert-danger" role="alert">
-        <strong><?php echo $sess_err_msg;?></strong>
-      </div>  
-    <?php }?>
 
-    <?php if (isset($sess_suc_msg) && !empty($sess_suc_msg)){?>
-      <div align="center" id="alerta" style="display:" class="alert alert-success" role="alert">
-        <strong><?php echo $sess_suc_msg;?></strong>
-      </div>  
-    <?php } ?>
 <section class="wraper">
   		<header class="header">
 			<div class="row">
@@ -252,6 +239,17 @@
 	}
 
  ?>
+
+<?php if (isset($sess_err_msg) && !empty($sess_err_msg)){
+      /*<div align="center" id="alerta" style="display:" class="alert alert-danger" role="alert">
+        <strong><?php #echo $sess_err_msg;?></strong>
+      </div>  */
+      echo "<script type='text/javascript'>
+            $(document).ready(function(){
+              swal('Advertencia!', '".$sess_err_msg."', 'error');
+            });
+          </script>";
+    }?>
 <!-- <script type="text/javascript">
 	$("#documento").DniRuc_Validador();
 </script> -->

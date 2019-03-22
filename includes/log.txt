@@ -1,0 +1,103 @@
+[2019/03/22 10:20:35] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:20:36] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:26:33] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:26:33] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715661
+[2019/03/22 10:26:36] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:26:36] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:27:52] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:27:52] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:28:10] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:10] eder@hotmail.com
+[2019/03/22 10:28:10] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@hotmail.com'
+[2019/03/22 10:28:12] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:12] eder@hotmail.com.es
+[2019/03/22 10:28:12] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@hotmail.com.es'
+[2019/03/22 10:28:16] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:16] eder@hotmail.com.ec
+[2019/03/22 10:28:16] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@hotmail.com.ec'
+[2019/03/22 10:28:23] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:23] eder@yahoo.com
+[2019/03/22 10:28:23] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com'
+[2019/03/22 10:28:25] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:25] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:28:25] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:28:25] eder@yahoo.com
+[2019/03/22 10:28:25] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com'
+[2019/03/22 10:29:13] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:29:13] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:29:13] eder@yahoo.com
+[2019/03/22 10:29:13] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com'
+[2019/03/22 10:29:13] SQL execute: INSERT INTO preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario) VALUES ('Eder Virgilio','Pozo Ramírez','eder@yahoo.com','2','0706715653','0997969113','2019-03-22 10:29:13','1')
+[2019/03/22 10:29:13] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:31:51] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:31:51] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:32:03] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:32:03] eder@hotmail.com
+[2019/03/22 10:32:03] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@hotmail.com'
+[2019/03/22 10:32:07] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:32:07] eder@yahoo.com
+[2019/03/22 10:32:07] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com'
+[2019/03/22 10:32:08] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:32:08] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:33:53] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:53] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:33:54] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:54] eder@yahoo.com
+[2019/03/22 10:33:54] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com'
+[2019/03/22 10:33:56] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:56] eder@yahoo.com.es
+[2019/03/22 10:33:56] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com.es'
+[2019/03/22 10:33:57] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:57] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:33:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:58] eder@yahoo.com.es
+[2019/03/22 10:33:58] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com.es'
+[2019/03/22 10:33:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:33:58] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:33:58] eder@yahoo.com.es
+[2019/03/22 10:33:58] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@yahoo.com.es'
+[2019/03/22 10:33:58] SQL execute: INSERT INTO preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario) VALUES ('eder','Pozo','eder@yahoo.com.es','2','0706715653','0992342681','2019-03-22 10:33:58','1')
+[2019/03/22 10:33:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:56:59] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:09] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:09] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:57:56] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:56] der@eder.com
+[2019/03/22 10:57:56] SQL Query: SELECT * FROM preregistro WHERE correo = 'der@eder.com'
+[2019/03/22 10:57:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:58] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:57:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:58] der@eder.com
+[2019/03/22 10:57:58] SQL Query: SELECT * FROM preregistro WHERE correo = 'der@eder.com'
+[2019/03/22 10:57:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 10:57:58] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 10:57:58] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:19] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:19] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:01:40] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:40] eder@eder.com
+[2019/03/22 11:01:40] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@eder.com'
+[2019/03/22 11:01:40] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:40] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:01:40] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:40] eder@eder.com
+[2019/03/22 11:01:40] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@eder.com'
+[2019/03/22 11:01:40] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:01:40] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:01:40] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:04] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:04] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:02:16] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:16] eder@eder.com
+[2019/03/22 11:02:16] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@eder.com'
+[2019/03/22 11:02:16] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:16] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:02:16] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:16] eder@eder.com
+[2019/03/22 11:02:16] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@eder.com'
+[2019/03/22 11:02:16] Utils::createSession empezo una nueva sesion
+[2019/03/22 11:02:16] SQL Query: SELECT * FROM preregistro WHERE dni = 0706715653
+[2019/03/22 11:02:16] eder@eder.com
+[2019/03/22 11:02:16] SQL Query: SELECT * FROM preregistro WHERE correo = 'eder@eder.com'
+[2019/03/22 11:02:16] SQL execute: INSERT INTO preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario) VALUES ('Eder Virgilio','Pozo Ramírez','eder@eder.com','2','0706715653','09685568745488','2019-03-22 11:02:16','1')
+[2019/03/22 11:02:16] Utils::createSession empezo una nueva sesion

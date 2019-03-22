@@ -297,8 +297,8 @@ class Utils{
   }
 
   public static function valida_telefono($numerotelefono){ 
-    if (preg_match("/^[ ]*[(]{0,1}[ ]*[0-9]{2,3}[ ]*[)]{0,1}[-]{0,1}[ ]*[0-9]{3,3}[ ]*[-]{0,1}[ ]*[0-9]{4,4}[ ]*$/",$numerotelefono)) return true; 
-    else return false; 
+    if (preg_match("/^[0-9]{10,15}$/",$numerotelefono)) return true; 
+    else return false;  
   }
 
   //en formato de YYYY-MM-DD o YYYY-MM-DD HH:MM:SS
