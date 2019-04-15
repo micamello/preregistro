@@ -29,7 +29,7 @@ abstract class Controlador_Base{
         $valor = Utils::getParam($campo,'',$this->data);
         if (is_array($valor)){
           if (count($valor)<=0 && $requerido == 1){
-            throw new Exception("Los campos marcado con asterisco son obligatorios");
+            throw new Exception("Todos los campos son obligatorios");
           }         
           foreach($valor as $key=>$val){
             $val = strip_tags($val);
@@ -41,7 +41,7 @@ abstract class Controlador_Base{
         else{
           $valor = trim($valor);
           if ($valor == "" && $requerido == 1){                    
-            throw new Exception("Los campos marcado con asterisco son obligatorios");
+            throw new Exception("Todos los campos son obligatorios");
           }
           $valor = strip_tags($valor);
           $valor = str_replace("\r\n","<br>",$valor);               

@@ -9,9 +9,21 @@ var tipo_documentacion_form = "";
 var documento_form;
 var telefono_form;
 var correo_form;
+var fechanacimiento_form;
+var genero_form;
 var campos = [];
 var tipo_usuario;
 var tipo_doc = $('#tipo_doc');
+
+function navegador(){
+  var agente = window.navigator.userAgent;
+  var navegadores = ["Chrome", "Firefox", "Safari", "Opera", "MSIE", "Trident", "Edge"];
+  for(var i in navegadores){
+      if(agente.indexOf( navegadores[i]) != -1 ){
+          return navegadores[i];
+      }
+  }
+}
 
 function camposandvar(){
 	campos = [];
@@ -38,8 +50,16 @@ function camposandvar(){
 	if($('#telefono').length){
 		telefono_form = $('#telefono');
 		campos.push(telefono_form);
-
 	}
+  if($('#fecha_nacimiento').length){
+		fechanacimiento_form = $('#fecha_nacimiento');
+		campos.push(fechanacimiento_form);
+	}
+	if($('#id_genero').length){
+		genero_form = $('#id_genero');
+		campos.push(genero_form);
+	}
+
 	// if($('#correo').length){
 	// 	correo_form = $('#correo');
 	// 	campos.push(correo_form);
@@ -47,8 +67,6 @@ function camposandvar(){
 	// }	
 	return campos;
 }
-
-
 
 function modalRise(id_tipo){
 	$('#tipo_usuario').val(id_tipo);
@@ -61,6 +79,8 @@ function modalRise(id_tipo){
 		document_label = "Documento";
 		apellidos_form.parents('.col-md-6').css('display', '');
 		tipo_documentacion_form.parents('.col-md-6').css('display', '');
+		fechanacimiento_form.parents('.col-md-6').css('display', '');
+		genero_form.parents('.col-md-6').css('display', '');
 	}
 	else{
 		modal_title = "Registro datos empresa";
@@ -69,8 +89,9 @@ function modalRise(id_tipo){
 		tipo_doc.val(1);
 		apellidos_form.parents('.col-md-6').css('display', 'none');
 		tipo_documentacion_form.parents('.col-md-6').css('display', 'none');
+		fechanacimiento_form.parents('.col-md-6').css('display', 'none');
+		genero_form.parents('.col-md-6').css('display', 'none');
 		documento_form.removeAttr('disabled');
-
 	}
 	nombre_form.prev().text(nombre_label);
 	modal.find('.modal-title').text(modal_title);
@@ -88,11 +109,28 @@ if(tipo_documentacion_form != ""){
 	})
 }
 
+if(document.getElementById('form_pre')){
+	if(navegador() != 'MSIE'){
+    $('#fechanac').DateTimePicker({
+      dateFormat: "yyyy-MM-dd",
+      shortDayNames: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
+      shortMonthNames: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+      fullMonthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Deciembre"],
+      titleContentDate: "Configurar fecha",
+      titleContentTime: "Configurar tiempo",
+      titleContentDateTime: "Configurar Fecha & Tiempo",
+      setButtonContent: "Listo",
+      clearButtonContent: "Limpiar"
+    });
+  }
+}
+
 $('#form_pre').on('submit', function(event){
 	verifyempty(camposandvar());
 	permitidos();
 	if($('#documento').val() != ""){
-		if(DniRuc_Validador($('#documento')) != true){
+		var tipo_dni = $('#tipo_doc').val();
+		if(DniRuc_Validador($('#documento'),tipo_dni) == true){
 			if(searchAjax($('#documento')) != true){
 				eliminarMensajeError($('#documento'));
 			}
@@ -145,19 +183,33 @@ function verifyempty(){
 	}
 }
 
-function crearMensajeError(obj, mensaje){
-	if($(obj).length){
-		$(obj).addClass('error_input');
-		$(obj).next().attr('class', 'error_class ahashakeheartache');
-		$(obj).next().text(mensaje);
+function crearMensajeError(obj, mensaje){	
+	if($(obj).length){		
+		if ($(obj)[0].id == "fecha_nacimiento"){
+			$("#fecha_err").addClass('error_input');
+		  $("#fecha_err").attr('class', 'error_class ahashakeheartache');
+		  $("#fecha_err").text(mensaje);
+		}
+		else{
+		  $(obj).addClass('error_input');
+		  $(obj).next().attr('class', 'error_class ahashakeheartache');
+		  $(obj).next().text(mensaje);
+		}
 	}
 }
 
 function eliminarMensajeError(obj, mensaje){
 	if($(obj).length){
-		$(obj).removeClass('error_input');
-		$(obj).next().removeAttr('class');
-		$(obj).next().text("");
+		if ($(obj)[0].id == "fecha_nacimiento"){
+			$("#fecha_err").removeClass('error_input');
+		  $("#fecha_err").removeAttr('class');
+		  $("#fecha_err").text("");
+		}
+		else{
+			$(obj).removeClass('error_input');
+			$(obj).next().removeAttr('class');
+			$(obj).next().text("");
+		}
 	}
 }
 
@@ -272,7 +324,6 @@ $('#apellidos').on('blur', function(){
 	}
 });
 
-
 $('#tipo_documentacion').on('change', function(){
 	if(tipo_usuario == 1){
 		eliminarMensajeError($(this));
@@ -288,6 +339,28 @@ $('#telefono').on('blur', function(){
 		crearMensajeError(this, "Rellene este campo");
 	}
 });
+
+$('#id_genero').on('change', function(){
+	var genero = $(this).val();
+  if(genero == null || genero == 0){
+    crearMensajeError(this, "Rellene este campo");
+  }else{
+    eliminarMensajeError($(this));
+  }
+});        
+
+$('#fecha_nacimiento').on('blur', function(){
+	var fecha_nacimiento = $(this).val();
+  if(!isNaN(fecha_nacimiento)){
+    crearMensajeError(this, "Debe elegir una fecha válida");        
+  }else if(validarFormatoFecha(fecha_nacimiento)){
+    crearMensajeError(this, "El formato de fecha es incorrecto");              
+  }else if(calcularEdad() == 0 && tipo_usuario == 1){
+    crearMensajeError(this, "Debe ser mayor de edad");        
+  }else{
+    eliminarMensajeError($(this));
+  }
+});    
 
 $('#correo').on('blur', function(){
 	var contenido = $(this).val();
@@ -341,6 +414,52 @@ function validarNumero(numero){
 	return /^[1-5]{1,1}$/.test(numero);
 }
 
+function validarFormatoFecha(campo) {
+  var RegExPattern = /^\d{1,2}-\d{1,2}-\d{4}$/;
+  var values = campo.split("-");
+  var dia = parseInt(values[2]);
+  var mes = parseInt(values[1]);
+  var ano = parseInt(values[0]);
+
+  if((dia <= 0 || dia > 31) || (mes <= 0 || mes > 12) || (ano <= 1500 || ano > 2099)){
+    return true;
+  }else if ((campo.match(RegExPattern)) && (campo!='')) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function calcularEdad(){
+    var fecha=document.getElementById("fecha_nacimiento").value;
+    // Si la fecha es correcta, calculamos la edad
+    var values=fecha.split("-");
+    var dia = values[2];
+    var mes = values[1];
+    var ano = values[0];
+    // cogemos los valores actuales
+    var fecha_hoy = new Date();
+    var ahora_ano = fecha_hoy.getYear();
+    var ahora_mes = fecha_hoy.getMonth()+1;
+    var ahora_dia = fecha_hoy.getDate();
+    // realizamos el calculo
+    var edad = (ahora_ano + 1900) - ano;
+    if ( ahora_mes < mes ){
+        edad--;
+    }
+    if ((mes == ahora_mes) && (ahora_dia < dia)){
+        edad--;
+    }
+    if (edad > 1900){
+        edad -= 1900;
+    }
+    if(edad >= 18){       
+        return 1;
+    }else{
+        return 0;
+    }
+}
+
 function searchAjax(obj){
 	var val_retorno1 = "";	
 	var puerto_host = $('#puerto_host').val();
@@ -349,35 +468,38 @@ function searchAjax(obj){
 	var tipo_dni = $('#tipo_usuario').val();
 		if(contenido != "" && tipo_dni != ""){
 			if(obj[0].id == "documento"){
-				url = puerto_host+"?mostrar=PreRegistro&opcion=buscarDni&dni="+contenido;
+				url = puerto_host+"/index.php?mostrar=PreRegistro&opcion=buscarDni&dni="+contenido;
 			}
 			if(obj[0].id == "correo"){
-				url = puerto_host+"?mostrar=PreRegistro&opcion=buscarCorreo&correo="+contenido;
+				url = puerto_host+"/index.php?mostrar=PreRegistro&opcion=buscarCorreo&correo="+contenido;
 			}
 			$.ajax({
-		            type: "GET",
-		            url: url,
-		            dataType:'json',
-		            async: false,
-		            success:function(data){
-		                if(!$.trim(data)){
-		                	val_retorno1 = false;
-		                }
-		                else{
-		                	val_retorno1 = true;
-		                }
-		            },
-		            error: function (request, status, error) {
-		                console.log(request.responseText);
-		            }
-		        });
+        type: "GET",
+        url: url,
+        dataType:'json',
+        async: false,
+        success:function(data){
+            if(!$.trim(data)){
+            	val_retorno1 = false;
+            }
+            else{
+            	val_retorno1 = true;
+            }
+        },
+        error: function (request, status, error) {
+            console.log(request.responseText);
+        }
+		  });
 		}
 	return val_retorno1;
 }
 
 $('#documento').on('blur', function(){
 	if($(this).val() != ""){
-		if(DniRuc_Validador($(this)) != true){
+		var tipo_dni = $('#tipo_doc').val();
+		//console.log(tipo_dni);
+		if(DniRuc_Validador($(this),tipo_dni) == true){
+			
 			if(searchAjax($(this)) != true){
 				eliminarMensajeError($(this));
 			}else{

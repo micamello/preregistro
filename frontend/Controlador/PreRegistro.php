@@ -29,23 +29,22 @@ class Controlador_PreRegistro extends Controlador_Base {
     try {
       if ( Utils::getParam('form_pre') == 1 ){
         if($tipo_usuario == 1){
-          $campos = array('nombre'=>1, 'apellidos'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1); 
+          $campos = array('nombre'=>1, 'apellidos'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 
+                          'correo'=>1, 'tipo_usuario'=>1, 'fecha_nacimiento'=>1, 'id_genero'=>1); 
         }else{
           $campos = array('nombre'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1); 
         }
         $data = $this->camposRequeridos($campos);
         self::validarTipoDato($data);
         self::guadarRegistro($data);
-        // $_SESSION['mostrar_exito'] = "Te has registrado correctamente";
+        $_SESSION['mostrar_exito'] = "Se ha registrado correctamente";
       }
     } catch (Exception $e) {
-      echo $e->getMessage();
+      //echo $e->getMessage();
       $_SESSION['mostrar_error'] = $e->getMessage();
     }
     Utils::doRedirect(PUERTO.'://'.HOST.'/');
   }
-
-
 
   public function guadarRegistro($data){
     $fecha = date("Y-m-d H:i:s");
@@ -58,7 +57,9 @@ class Controlador_PreRegistro extends Controlador_Base {
                               'dni'=>$data['documento'], 
                               'telefono'=>$data['telefono'], 
                               'fecha'=>$fecha,
-                              'tipo_usuario'=>$data['tipo_usuario']);
+                              'tipo_usuario'=>$data['tipo_usuario'],
+                              'fecha_nacimiento'=>$data['fecha_nacimiento'],
+                              'id_genero'=>$data['id_genero']);
     }
     else{
       $datos_usuario = array('nombres'=>$data['nombre'],
@@ -69,16 +70,13 @@ class Controlador_PreRegistro extends Controlador_Base {
                               'fecha'=>$fecha,
                               'tipo_usuario'=>$data['tipo_usuario']);
     }
-    $_SESSION['mensaje'] = "";
+    //$_SESSION['mensaje'] = "";
     if(!Modelo_Usuario::guardarUsuario($datos_usuario)){
-      $_SESSION['mensaje'] = 0;
+      //$_SESSION['mensaje'] = 0;
       throw new Exception("Ha ocurrido un error, intente nuevamente en un momento");
     }
-    $_SESSION['mensaje'] = 1;
+    //$_SESSION['mensaje'] = 1;
   }
-
-
-
 
   public function validarTipoDato($data){
       if($data['tipo_usuario'] == 1){
@@ -88,6 +86,14 @@ class Controlador_PreRegistro extends Controlador_Base {
         }
         if (!preg_match('/^[\p{L} ]+$/u', html_entity_decode($data['apellidos']))){
           throw new Exception("El campo solo acepta letras, tildes y espacios");
+        }
+        $validaFecha = Utils::valida_fecha($data['fecha_nacimiento']);
+        if (empty($validaFecha)) {
+          throw new Exception("La fecha " . $data['fecha_nacimiento'] . " no es v\u00E1lida");
+        }
+        $validaFechaNac = Utils::validarFechaNac($data['fecha_nacimiento']);
+        if (empty($validaFechaNac)) {
+          throw new Exception("Debe ser Mayor de edad");
         }
       }
       else{
@@ -127,7 +133,8 @@ class Controlador_PreRegistro extends Controlador_Base {
   }
 
   public function defaultScreen(){
-    Vista::render('inicio',array(), '', '');
+    $tags["arrgenero"] = Modelo_Genero::consulta();
+    Vista::render('inicio',$tags, '', '');
   }
 }  
 ?>

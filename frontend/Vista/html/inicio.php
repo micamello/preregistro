@@ -18,7 +18,15 @@
 	<!-- Style CSS -->
 	<link href="<?php echo PUERTO."://".HOST;?>/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo PUERTO."://".HOST;?>/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo PUERTO."://".HOST;?>/css/micamello.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo PUERTO."://".HOST;?>/css/DateTimePicker.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo PUERTO."://".HOST;?>/css/micamello.css">	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123345917-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-123345917-1');
+	</script>
 </head>
 <body style="background-image: url('<?php echo PUERTO."://".HOST;?>/imagenes/fondo.jpg');">
 
@@ -26,7 +34,6 @@
 	$user_agent = $_SERVER['HTTP_USER_AGENT'];
 
 	function getBrowser($user_agent){
-
 	  if(strpos($user_agent, 'MSIE') !== FALSE)
 	    return 'MSIE';
 	  elseif(strpos($user_agent, 'Edge') !== FALSE) //Microsoft Edge
@@ -46,7 +53,6 @@
 	  else
 	    return 'No hemos podido detectar su navegador';
 	}
-
 	$navegador = getBrowser($user_agent);	
  ?>
 <?php if($navegador == 'MSIE'){ ?>
@@ -89,9 +95,7 @@
 				       	</li>
 		  			</ul><!-- #back-countdiown -->
   		        </div>
-  		    </div>
-  			
-        
+  		    </div>  			        
   		</section><!-- .countdown-wrapper -->
   	</section>
 
@@ -117,12 +121,6 @@
 	</a>
   </div> 
 </div>
-
-
-
-
-
-
 
 <div id="pre_registro_modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -185,6 +183,28 @@
 							</div>
 						</div>
 
+            <div class="col-md-6">
+							<div class="form-group">
+								<label for="fechanacimiento">Fecha de Nacimiento</label>
+								<input type="text" id="fecha_nacimiento" class="form-control" data-field="date" max="<?php echo date('Y-m-d'); ?>" placeholder="aaaa-mm-dd" name="fecha_nacimiento">
+								<div id="fechanac"></div>
+								<div id="fecha_err"></div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nombre">Genero</label>
+								<select class="form-control" id="id_genero" name="id_genero">
+									<option value="" selected="selected" disabled="disabled">Seleccione una opción</option>
+									<?php foreach ($arrgenero as $key=>$value){ ?>										
+										<option value="<?php echo $value["id_genero"]; ?>"><?php echo utf8_encode($value["descripcion"]); ?></option>
+									<?php } ?>
+								</select>
+								<div></div>
+							</div>
+						</div>
+
 						<div class="col-md-6">
 							<div class="form-group">
 								<label for="telefono">Teléfono</label>
@@ -212,49 +232,30 @@
   </div>
 </div>
 
-
-
-
-
 <script src="<?php echo PUERTO."://".HOST;?>/js/jquery-2.1.4.min.js"></script>
 <script src="<?php echo PUERTO."://".HOST;?>/js/bootstrap.min.js"></script>
 <script src="<?php echo PUERTO."://".HOST;?>/js/coundown-timer.js"></script>
 <script src="<?php echo PUERTO."://".HOST;?>/js/scripts.js"></script>
-<!-- <script src="<?php echo PUERTO."://".HOST;?>/js/mic.js"></script> -->
 <script src="<?php echo PUERTO."://".HOST;?>/js/sweetalert.min.js"></script>
-<script src="<?php echo PUERTO."://".HOST;?>/js/micamello.js"></script>
+<script src="<?php echo PUERTO."://".HOST;?>/js/DateTimePicker.js"></script>
 <script src="<?php echo PUERTO."://".HOST;?>/js/DniRuc_Validador.js"></script>
-
-<?php 
-
-	if(isset($_SESSION['mensaje'])){
-		if($_SESSION['mensaje'] == 1){
-			?>
-				<script type="text/javascript">
-					registro_success();
-				</script>
-			<?php
-			$_SESSION['mensaje'] = "";
-		}
-	}
-
- ?>
+<script src="<?php echo PUERTO."://".HOST;?>/js/micamello.js"></script>
 
 <?php if (isset($sess_err_msg) && !empty($sess_err_msg)){
-      /*<div align="center" id="alerta" style="display:" class="alert alert-danger" role="alert">
-        <strong><?php #echo $sess_err_msg;?></strong>
-      </div>  */
-      echo "<script type='text/javascript'>
-            $(document).ready(function(){
-              swal('Advertencia!', '".$sess_err_msg."', 'error');
-            });
-          </script>";
-    }?>
-<!-- <script type="text/javascript">
-	$("#documento").DniRuc_Validador();
-</script> -->
+  echo "<script type='text/javascript'>
+        $(document).ready(function(){
+          swal('Advertencia!', '".$sess_err_msg."', 'error');
+        });
+      </script>";
+}?>
 
+<?php if (isset($sess_suc_msg) && !empty($sess_suc_msg)){
+  echo "<script type='text/javascript'>
+        $(document).ready(function(){
+          swal('Exitoso!', '".$sess_suc_msg."', 'success');
+        });
+      </script>";
+} ?>
 
-<!-- <script type="text/javascript" src="<?php echo PUERTO."://".HOST;?>/js/ruc_jquery_validator.min.js"></script> -->
 </body>
 </html>

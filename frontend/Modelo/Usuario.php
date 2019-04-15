@@ -5,7 +5,6 @@ class Modelo_Usuario{
   public static function existeCorreo($correo){
     if(empty($correo)){ return false; }
     $nulo = array();
-    Utils::log($correo);
     $sql = "SELECT * FROM preregistro WHERE correo = '".$correo."'";
     $rs = $GLOBALS['db']->auto_array($sql,array($correo));
     return (empty($rs['correo'])) ? $nulo : $rs;

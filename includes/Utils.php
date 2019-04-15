@@ -334,7 +334,7 @@ class Utils{
         $month = $date_array[1];
         $day = $date_array[2];
         
-        if((($year<1900)OR($year>2200))OR(($month<=0)OR($month>12))OR(($day<=0)OR($day>31)))
+        if((($year<1919)OR($year>2200))OR(($month<=0)OR($month>12))OR(($day<=0)OR($day>31)))
           return false;
       }else
         return false;
@@ -344,15 +344,18 @@ class Utils{
     }
   }
 
-  public static function valida_fecha_mayor($fecha){
-    $result = false;
-    if (empty($fecha)) {return $result;}
-      $fecha_actual = date("Y-m-d");
-      if ($fecha < $fecha_actual) {
-        return $result;
-      }
-        $result = true;
-        return $result;
+  public static function validarFechaNac($fecha){
+    //Creamos objeto fecha desde los valores recibidos
+    $nacio = DateTime::createFromFormat('Y-m-d', $fecha);
+    //Calculamos usando diff y la fecha actual
+    $calculo = $nacio->diff(new DateTime());
+    //Obtenemos la edad
+    $edad =  $calculo->y;    
+    if ($edad < 18) {      
+      return false;  
+    }else{    
+      return true;  
+    }
   }
 
   static public function valida_upload($file,$tipo){ 
@@ -565,12 +568,13 @@ class Utils{
 
   public static function validar_EC($dni){
     if (empty($dni)) {return false;}
+    if (empty($dni)) {return false;}
     $val = false;
-    if(ValidadorEc::validarCedula($dni) == true || ValidadorEc::validarRucPersonaNatural($dni) == true || ValidadorEc::validarRucSociedadPrivada($dni) == true || ValidadorEc::validarRucSociedadPublica($dni) == true) {
+    if(ValidadorEc::DniRuc_Validador($dni)) {
       $val = true;
-      }
-      return $val;
     }
+    return $val;
+  }
 
   public static function no_carac($cadena)
   {
