@@ -30,9 +30,9 @@ class Controlador_PreRegistro extends Controlador_Base {
       if ( Utils::getParam('form_pre') == 1 ){
         if($tipo_usuario == 1){
           $campos = array('nombre'=>1, 'apellidos'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 
-                          'correo'=>1, 'tipo_usuario'=>1, 'fecha_nacimiento'=>1, 'id_genero'=>1); 
+                          'correo'=>1, 'tipo_usuario'=>1, 'fecha_nacimiento'=>1, 'id_genero'=>1, 'term_cond'=>1); 
         }else{
-          $campos = array('nombre'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1); 
+          $campos = array('nombre'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1, 'term_cond'=>1); 
         }
         $data = $this->camposRequeridos($campos);
         self::validarTipoDato($data);
@@ -59,7 +59,8 @@ class Controlador_PreRegistro extends Controlador_Base {
                               'fecha'=>$fecha,
                               'tipo_usuario'=>$data['tipo_usuario'],
                               'fecha_nacimiento'=>$data['fecha_nacimiento'],
-                              'id_genero'=>$data['id_genero']);
+                              'id_genero'=>$data['id_genero'],
+                              'term_cond'=>1);
     }
     else{
       $datos_usuario = array('nombres'=>$data['nombre'],
@@ -68,7 +69,8 @@ class Controlador_PreRegistro extends Controlador_Base {
                               'dni'=>$data['documento'], 
                               'telefono'=>$data['telefono'], 
                               'fecha'=>$fecha,
-                              'tipo_usuario'=>$data['tipo_usuario']);
+                              'tipo_usuario'=>$data['tipo_usuario'],
+                              'term_cond'=>1);
     }
     //$_SESSION['mensaje'] = "";
     if(!Modelo_Usuario::guardarUsuario($datos_usuario)){
@@ -98,8 +100,7 @@ class Controlador_PreRegistro extends Controlador_Base {
       }
       else{
         if (!preg_match('/^[a-zA-ZÁÉÍÓÚñáéíóúÑ0-9&"., ]{4,}$/u', html_entity_decode($data['nombre'])) && !preg_match('/(.*[a-zA-ZÁÉÍÓÚñáéíóúÑ]){3}/u', html_entity_decode($data['nombre']))){
-          throw new Exception("El campo solo acepta letras, tildes y espacios");
-          
+          throw new Exception("El campo solo acepta letras, tildes y espacios");          
         }
       }
 

@@ -11,6 +11,7 @@ var telefono_form;
 var correo_form;
 var fechanacimiento_form;
 var genero_form;
+var termcond_form;
 var campos = [];
 var tipo_usuario;
 var tipo_doc = $('#tipo_doc');
@@ -35,17 +36,14 @@ function camposandvar(){
 	if($('#apellidos').length){
 		apellidos_form = $('#apellidos');
 		campos.push(apellidos_form);
-
 	}
 	if($('#tipo_documentacion').length){
 		tipo_documentacion_form = $('#tipo_documentacion');
 		campos.push(tipo_documentacion_form);
-
 	}
 	if($('#documento').length){
 		documento_form = $('#documento');
 		campos.push(documento_form);
-
 	}
 	if($('#telefono').length){
 		telefono_form = $('#telefono');
@@ -58,6 +56,10 @@ function camposandvar(){
 	if($('#id_genero').length){
 		genero_form = $('#id_genero');
 		campos.push(genero_form);
+	}
+	if($('#term_cond').length){
+		termcond_form = $('#term_cond');
+		campos.push(termcond_form);
 	}
 
 	// if($('#correo').length){
@@ -142,7 +144,8 @@ $('#form_pre').on('submit', function(event){
 			crearMensajeError($('#documento'), "Documento ingresado no es válido");
 		}
 	}
-	if($('#correo').val() != ""){
+
+	if($('#correo').val() != ""){			
 		if(validarCorreo($('#correo').val())){
 			if(searchAjax($('#correo')) == false){
 				eliminarMensajeError($('#correo'));
@@ -157,6 +160,11 @@ $('#form_pre').on('submit', function(event){
 	else{
 		crearMensajeError($('#correo'), "Rellene este campo");
 	}
+
+	if(!$('#term_cond').is(':checked')){
+	  crearMensajeError($('#term_cond'), "Debe aceptar términos y condiciones");
+	}	
+	
 	if(counterror() > 0){
 		event.preventDefault();
 	}
@@ -190,6 +198,11 @@ function crearMensajeError(obj, mensaje){
 		  $("#fecha_err").attr('class', 'error_class ahashakeheartache');
 		  $("#fecha_err").text(mensaje);
 		}
+		else if($(obj)[0].id == "term_cond"){
+			$("#termcond_err").addClass('error_input');
+		  $("#termcond_err").attr('class', 'error_class ahashakeheartache');
+		  $("#termcond_err").text(mensaje);		  
+	  }
 		else{
 		  $(obj).addClass('error_input');
 		  $(obj).next().attr('class', 'error_class ahashakeheartache');
@@ -205,6 +218,11 @@ function eliminarMensajeError(obj, mensaje){
 		  $("#fecha_err").removeAttr('class');
 		  $("#fecha_err").text("");
 		}
+		else if($(obj)[0].id == "term_cond"){
+		  $("#termcond_err").removeClass('error_input');
+		  $("#termcond_err").removeAttr('class');
+		  $("#termcond_err").text("");	
+	  }
 		else{
 			$(obj).removeClass('error_input');
 			$(obj).next().removeAttr('class');
@@ -363,10 +381,10 @@ $('#fecha_nacimiento').on('blur', function(){
 });    
 
 $('#correo').on('blur', function(){
-	var contenido = $(this).val();
+	var contenido = $(this).val();	
 	if(contenido != ""){
 		// validarCaracteresPermitidos('correo', $(this));
-		if(validarCorreo($(this).val())){
+		if(validarCorreo($(this).val())){			
 			if(searchAjax($(this)) == false){
 				eliminarMensajeError($(this));
 			}else{
@@ -381,6 +399,17 @@ $('#correo').on('blur', function(){
 		crearMensajeError(this, "Rellene este campo");
 	}
 });
+
+if($('#term_cond').length){
+	$('#term_cond').on('change', function(){		
+		if(!$(this).is(':checked')){
+			crearMensajeError($(this), "Debe aceptar términos y condiciones");
+		}
+		else{
+			eliminarMensajeError($(this), "");
+		}
+	})
+}
 
 function validarCorreo(correo) { 
   return /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(correo);
