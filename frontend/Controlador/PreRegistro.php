@@ -25,14 +25,15 @@ class Controlador_PreRegistro extends Controlador_Base {
   }
 
   public function proceso(){
-    $tipo_usuario = Utils::getParam('tipo_usuario');    
+    $tipo_usuario = Utils::getParam('tipo_usuario'); 
+    $campos = array();   
     try {
       if ( Utils::getParam('form_pre') == 1 ){
         if($tipo_usuario == 1){
           $campos = array('nombre'=>1, 'apellidos'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 
-                          'correo'=>1, 'tipo_usuario'=>1, 'fecha_nacimiento'=>1, 'id_genero'=>1, 'term_cond'=>1); 
+                          'correo'=>1, 'tipo_usuario'=>1, 'fecha_nacimiento'=>1, 'id_genero'=>1); 
         }else{
-          $campos = array('nombre'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1, 'term_cond'=>1); 
+          $campos = array('nombre'=>1, 'tipo_doc'=>1, 'documento'=>1, 'telefono'=>1, 'correo'=>1, 'tipo_usuario'=>1, 'sectorind'=>1); 
         }
         $data = $this->camposRequeridos($campos);
         self::validarTipoDato($data);
@@ -70,6 +71,7 @@ class Controlador_PreRegistro extends Controlador_Base {
                               'telefono'=>$data['telefono'], 
                               'fecha'=>$fecha,
                               'tipo_usuario'=>$data['tipo_usuario'],
+                              'id_sectorindustrial'=>$data['sectorind'],
                               'term_cond'=>1);
     }
     //$_SESSION['mensaje'] = "";
@@ -134,6 +136,7 @@ class Controlador_PreRegistro extends Controlador_Base {
   }
 
   public function defaultScreen(){
+    $tags["arrsectorind"]= Modelo_SectorIndustrial::consulta();
     $tags["arrgenero"] = Modelo_Genero::consulta();
     Vista::render('inicio',$tags, '', '');
   }

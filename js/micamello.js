@@ -15,6 +15,7 @@ var termcond_form;
 var campos = [];
 var tipo_usuario;
 var tipo_doc = $('#tipo_doc');
+var sectorind;
 
 function navegador(){
   var agente = window.navigator.userAgent;
@@ -62,11 +63,17 @@ function camposandvar(){
 		campos.push(termcond_form);
 	}
 
-	// if($('#correo').length){
-	// 	correo_form = $('#correo');
-	// 	campos.push(correo_form);
+	if($('#sectorind').length){
+		sectorind = $('#sectorind');
+		campos.push(sectorind);
+	}
 
-	// }	
+	if($('#correo').length){
+		correo_form = $('#correo');
+		campos.push(correo_form);
+
+	}	
+	// console.log(campos);
 	return campos;
 }
 
@@ -83,6 +90,7 @@ function modalRise(id_tipo){
 		tipo_documentacion_form.parents('.col-md-6').css('display', '');
 		fechanacimiento_form.parents('.col-md-6').css('display', '');
 		genero_form.parents('.col-md-6').css('display', '');
+		sectorind.parents(':eq(1)').css('display', 'none');
 	}
 	else{
 		modal_title = "Registro datos empresa";
@@ -94,6 +102,9 @@ function modalRise(id_tipo){
 		fechanacimiento_form.parents('.col-md-6').css('display', 'none');
 		genero_form.parents('.col-md-6').css('display', 'none');
 		documento_form.removeAttr('disabled');
+		// sectorind.parents('.col-md-6').css('display', '');
+		// console.log(sectorind);
+		sectorind.parents(':eq(1)').css('display', '');
 	}
 	nombre_form.prev().text(nombre_label);
 	modal.find('.modal-title').text(modal_title);
@@ -171,27 +182,39 @@ $('#form_pre').on('submit', function(event){
 });
 
 function verifyempty(){
-	var array = camposandvar();
+	var array = "";
+	array = camposandvar();
 	var mensaje = "";
 	for (var i = 0; i < array.length; i++) {
-		if($(array[i]).parents('.col-md-6').css('display') != 'none'){
-			if($(array[i]).val() == "" || $(array[i]).val() == null){
-				if($(array[i]).prop('tagName') == "SELECT"){
-					mensaje = "Seleccione una opción";
+		if($(array[i]).parents(':eq(1)').css('display') != 'none'){
+			if($(array[i]).attr('type') != 'checkbox'){
+				if($(array[i]).val() == "" || $(array[i]).val() == null){
+					if($(array[i]).prop('tagName') == "SELECT"){
+						mensaje = "Seleccione una opción";
+					}
+					else{
+						mensaje = "Rellene este campo";
+					}
+					crearMensajeError($(array[i]), mensaje);
 				}
 				else{
-					mensaje = "Rellene este campo";
+					eliminarMensajeError($(array[i]));
 				}
-				crearMensajeError($(array[i]), mensaje);
 			}
 			else{
-				eliminarMensajeError($(array[i]));
+				if($(array[i]).prop('checked') == false){
+					mensaje = "Debe aceptar términos y condiciones";
+					crearMensajeError($(array[i]), mensaje);
+				}
+				else{
+					eliminarMensajeError($(array[i]));
+				}
 			}
 		}
 	}
 }
 
-function crearMensajeError(obj, mensaje){	
+function crearMensajeError(obj, mensaje){
 	if($(obj).length){		
 		if ($(obj)[0].id == "fecha_nacimiento"){
 			$("#fecha_err").addClass('error_input');
@@ -238,6 +261,7 @@ function counterror(){
 
 $('#pre_registro_modal').on('hidden.bs.modal', function(){
 	var campos_form = camposandvar();
+
 	for (var i = 0; i < campos.length; i++) {
 	 $(campos[i]).val("");
 	}
@@ -256,6 +280,8 @@ $('#pre_registro_modal').on('hidden.bs.modal', function(){
 			// $(errores_form1[i]).text("");
 		}
 	}
+
+	// $('#term_cond').prop('checked', false);
 
 });
 
@@ -341,6 +367,14 @@ $('#apellidos').on('blur', function(){
 		}
 	}
 });
+
+$('#sectorind').on('change blur', function(){
+	if($(this).val() == "" || $(this).val() == null){
+		crearMensajeError($(this), "Seleccione una opción");
+	}else{
+		eliminarMensajeError($(this), "");
+	}
+})
 
 $('#tipo_documentacion').on('change', function(){
 	if(tipo_usuario == 1){
