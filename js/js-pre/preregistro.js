@@ -98,6 +98,9 @@ function mostrarCampos(idForm){
 	}
 	if(idForm == 1){
 		buttonChange(1);
+		$('#documento').attr('placeholder', 'Documento *');
+		$('#telefono').attr('placeholder', 'Celular *');
+		$('#correo').parent().removeClass('col-md-12').addClass('col-md-6');
 		$('.register-heading').html('Registrarse como candidato');
 		apellidos.parent().css('display', '');
 		sectorind.parent().css('display', 'none');
@@ -107,6 +110,9 @@ function mostrarCampos(idForm){
 	}
 	else{
 		buttonChange(2);
+		$('#documento').attr('placeholder', 'RUC *');
+		$('#telefono').attr('placeholder', 'Teléfono *');
+		$('#correo').parent().removeClass('col-md-6').addClass('col-md-12');
 		$('#documento').removeAttr('disabled');
 		$('#tipo_doc').val(1);
 		$('.register-heading').html('Registrarse como empresa');
@@ -290,7 +296,7 @@ if($('#telefono').length){
 			}
 			else{
 				if(!ValidarCelTelEmp($(this).val())){
-					crearMensajeError($(this), "Mínimo 6 dígitos, máx. 15");
+					crearMensajeError($(this), "Mínimo 9 dígitos, máx. 15");
 				}
 				else{
 					eliminarMensajeError($(this));
@@ -582,7 +588,7 @@ function validarCorreo(correo) {
 
 
 function ValidarCelTelEmp(valor){
-	if(/^[0-9]{6,15}$/.test(valor)){return true;}else{return false;}
+	if(/^[0-9]{9,15}$/.test(valor)){return true;}else{return false;}
 }
 
 function validarCelCand(valor){

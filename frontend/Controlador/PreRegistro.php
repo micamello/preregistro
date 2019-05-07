@@ -156,6 +156,7 @@ class Controlador_PreRegistro extends Controlador_Base {
   }
 
   public function defaultScreen(){
+    setcookie('preRegistro', null, -1, '/');
     $tags["template_css"][] = "estilo";
     $tags["template_css"][] = "font-awesome.min";
     $tags["template_css"][] = "bootstrap";
