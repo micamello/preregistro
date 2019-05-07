@@ -260,12 +260,6 @@
 	border-radius: 10px;
 }
 
-/*boton color texto*/
-/*a:not([href]):not([tabindex]){*/
-/*a:not([href]):not([tabindex]) {
-	color: white;
-}*/
-
 .dtpicker-buttonCont .dtpicker-button:hover
 {
 	color: #FFFFFF;
