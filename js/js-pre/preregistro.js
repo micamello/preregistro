@@ -122,6 +122,8 @@ function mostrarCampos(idForm){
 		fecha_nacimiento.parent().css('display', 'none');
 		id_genero.parent().css('display', 'none');
 	}
+
+	safari();
 }
 
 // function resetForm(){
@@ -736,4 +738,15 @@ function leerCookie(name) {
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
     return null;
+}
+
+function safari(){
+	if(navigator.userAgent.indexOf("Safari") > -1){
+		var safariGrid = $('.form-group');
+		$.each(safariGrid, function(indice, elemento){
+			$(elemento).removeClass('col-md-6');
+			$(elemento).removeClass('col-xs-12');
+			$(elemento).addClass('col-md-12');
+		});
+	}
 }
