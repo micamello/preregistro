@@ -9,13 +9,13 @@
             </ul>
         	<ul class="timer-bloque nav navbar-nav navbar-right">                                             
             	<li>
-                	<a href="#"><i class="timer-iconos fa fa-facebook"></i></a>
+                	<a href="<?php echo URL_FACEBOOK;?>"><i class="timer-iconos fa fa-facebook"></i></a>
                 </li>
             	<li>
-                	<a href="#"><i class="timer-iconos fa fa-twitter"></i></a>
+                	<a href="<?php echo URL_TWITTER;?>"><i class="timer-iconos fa fa-twitter"></i></a>
                 </li>
             	<li>
-                	<a href="#"><i class="timer-iconos fa fa-instagram"></i></a>
+                	<a href="<?php echo URL_INSTAGRAM;?>"><i class="timer-iconos fa fa-instagram"></i></a>
                 </li>
             </ul>
         </div> 
@@ -60,10 +60,10 @@
 		        	 <p class="counter"><b>SEGUNDOS</b></p>
 		       	</li>
   			</ul><!-- #back-countdiown -->
-
-			<button class="btn-blue">
-            	<a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">Únete Ahora</a>
-          	</button>
+          <a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">
+			      <button class="btn-blue">
+            	Únete Ahora
+          	</button></a>
 	        </div>
 	    </div>  			        
 	</section>
