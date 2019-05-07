@@ -16,4 +16,10 @@ define('RUTA_INCLUDES', FRONTEND_RUTA.'includes/');
 define('RUTA_FRONTEND', FRONTEND_RUTA.'frontend/'); 
 define('RUTA_VISTA', FRONTEND_RUTA.'frontend/Vista/');
 define('TIPO_DOCUMENTO', array('1'=>'Ruc','2'=>'Cédula','3'=>'Pasaporte'));
+define('MAIL_CORREO','info@micamello.com.ec');
+define('MAIL_NOMBRE','Mi Camello');
+define('MAIL_USERNAME','info@micamello.com.ec');
+define('MAIL_PASSWORD','bXKX695=ukC@');
+define('MAIL_PORT','587');
+define('MAIL_HOST','mail.micamello.com.ec');
 ?>
