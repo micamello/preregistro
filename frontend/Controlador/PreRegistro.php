@@ -108,10 +108,18 @@ class Controlador_PreRegistro extends Controlador_Base {
         if (empty($validaFechaNac)) {
           throw new Exception("Debe ser Mayor de edad");
         }
+
+        if(!Utils::validacelularCand($data['telefono'])){
+          throw new Exception("El tel\u00E9fono ingresado no es v\u00E1lido");
+        }
       }
       else{
         if (!preg_match('/^[a-zA-ZÁÉÍÓÚñáéíóúÑ0-9&"., ]{4,}$/u', html_entity_decode($data['nombre'])) && !preg_match('/(.*[a-zA-ZÁÉÍÓÚñáéíóúÑ]){3}/u', html_entity_decode($data['nombre']))){
           throw new Exception("El campo solo acepta letras, tildes y espacios");          
+        }
+
+        if(!Utils::validaCelTelEmp($data['telefono'])){
+          throw new Exception("El tel\u00E9fono ingresado no es v\u00E1lido");
         }
       }
 
@@ -130,9 +138,6 @@ class Controlador_PreRegistro extends Controlador_Base {
         throw new Exception("El documento de identidad ingresado ya existe");
       }
 
-      if(!Utils::valida_telefono($data['telefono'])){
-        throw new Exception("El tel\u00E9fono ingresado no es v\u00E1lido");
-      }
 
       if(!Utils::es_correo_valido($data['correo'])){
         throw new Exception("El correo ingresado no es v\u00E1lido");

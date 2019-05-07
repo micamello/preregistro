@@ -110,8 +110,13 @@ class Utils{
     return Modelo_Sucursal::obtieneSucursalActual($_SERVER["HTTP_HOST"]);
   }
 
-  public static function valida_telefono($numerotelefono){ 
+  public static function validacelularCand($numerotelefono){ 
     if (preg_match("/^[0-9]{10,15}$/",$numerotelefono)) return true; 
+    else return false;  
+  }
+
+  public static function validaCelTelEmp($numerotelefono){ 
+    if (preg_match("/^[0-9]{9,15}$/",$numerotelefono)) return true; 
     else return false;  
   }
 
