@@ -1190,3 +1190,37 @@
 [2019/05/07 09:30:39] Utils::createSession empezo una nueva sesion
 [2019/05/07 09:30:39] SQL Query: SELECT * FROM mfo_genero
 [2019/05/07 09:30:39] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:31:46] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:31:48] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:31:48] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:31:48] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:33:04] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:33:04] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:33:04] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:33:23] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:33:23] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:33:23] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:33:39] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:33:39] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:33:39] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:33:51] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:33:51] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:33:51] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:33:52] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:33:52] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:33:52] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:37:25] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:37:25] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:37:26] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:37:50] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:37:50] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:37:50] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:37:52] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:37:52] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:37:52] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:39:04] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:39:04] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:39:04] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:39:07] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:39:07] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:39:07] SQL Query: SELECT * FROM mfo_sectorindustrial
