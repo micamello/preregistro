@@ -744,9 +744,9 @@ function safari(){
 	if(navigator.userAgent.indexOf("Safari") > -1){
 		var safariGrid = $('.form-group');
 		$.each(safariGrid, function(indice, elemento){
-			$(elemento).removeClass('col-md-12');
 			$(elemento).removeClass('col-md-6');
 			$(elemento).removeClass('col-xs-12');
+			$(elemento).addClass('col-md-12');
 		});
 	}
 }
