@@ -22,4 +22,7 @@ define('MAIL_USERNAME','info@micamello.com.ec');
 define('MAIL_PASSWORD','bXKX695=ukC@');
 define('MAIL_PORT','587');
 define('MAIL_HOST','mail.micamello.com.ec');
+define('URL_FACEBOOK','#');
+define('URL_TWITTER','#');
+define('URL_INSTAGRAM','#');
 ?>
