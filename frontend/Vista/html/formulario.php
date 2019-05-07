@@ -26,7 +26,7 @@
                             <div class="col-md-6 col-xs-12 form-group">
                                 <div></div>
                                 <select class="form-control" name="sectorind" id="sectorind">
-                                    <option value="" selected="selected" disabled="disabled">Sector industrial</option>
+                                    <option value="" selected="selected" disabled="disabled">Sector industrial *</option>
                                     <?php 
                                         if(!empty($arrsectorind)){
                                             foreach ($arrsectorind as $sector) {
@@ -47,7 +47,7 @@
                             <div class="col-md-6 col-xs-12 form-group">
                                 <div></div>
                                 <select class="form-control" name="tipo_documentacion" id="tipo_documentacion">
-                                    <option disabled="disabled" selected="selected" value="">Tipo de documentación</option>
+                                    <option disabled="disabled" selected="selected" value="">Tipo de documentación *</option>
                                     <?php foreach (TIPO_DOCUMENTO as $key => $value): ?>
                                         <?php
                                             if($key != 1){
@@ -67,7 +67,7 @@
 
                             <div class="col-md-6 col-xs-12 form-group">
                                 <div></div>
-                                <input type="text" id="fecha_nacimiento" class="form-control" data-field="date" placeholder="Fecha de nacimiento" name="fecha_nacimiento">
+                                <input type="text" id="fecha_nacimiento" class="form-control" data-field="date" placeholder="Fecha de nacimiento *" name="fecha_nacimiento">
                                 <div id="fechanac"></div>
                             </div>
 
@@ -83,12 +83,12 @@
 
                             <div class="col-md-6 col-xs-12 form-group">
                                 <div></div>
-                                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Celular">
+                                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Celular *">
                             </div>
 
                             <div class="col-md-6 col-xs-12 form-group">
                                 <div></div>
-                                <input class="form-control" type="text" name="correo" id="correo" placeholder="Correo">
+                                <input class="form-control" type="text" name="correo" id="correo" placeholder="Correo *">
                             </div>
                     <div class="text-center">
                         <div class="form-group check_box">
