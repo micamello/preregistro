@@ -962,3 +962,12 @@
 [2019/05/07 08:32:31] SQL execute: INSERT INTO mfo_preregistro (nombres,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,id_sectorindustrial,term_cond) VALUES ('empresa de ejemplo 1','edervpozo@gmail.com','1','0706715661001','0968597677254','2019-05-07 08:32:31','2','7','1')
 [2019/05/07 08:32:31] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
 [2019/05/07 08:32:44] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:09] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:10] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:10] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:12] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:12] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 08:39:12] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 08:39:23] Utils::createSession empezo una nueva sesion
+[2019/05/07 08:39:23] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 08:39:23] SQL Query: SELECT * FROM mfo_sectorindustrial
