@@ -1236,3 +1236,32 @@
 [2019/05/07 11:46:49] Utils::createSession empezo una nueva sesion
 [2019/05/07 11:46:49] SQL Query: SELECT * FROM mfo_genero
 [2019/05/07 11:46:49] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:49:59] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:49:59] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:49:59] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:50:00] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:50:00] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 11:50:00] Utils::createSession empezo una nueva sesion
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 11:50:00] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 12:57:51] Utils::createSession empezo una nueva sesion
+[2019/05/07 12:57:52] Utils::createSession empezo una nueva sesion
+[2019/05/07 12:57:52] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 12:57:52] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/07 12:59:37] Utils::createSession empezo una nueva sesion
+[2019/05/07 12:59:37] SQL Query: SELECT * FROM mfo_genero
+[2019/05/07 12:59:37] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/08 08:18:27] Utils::createSession empezo una nueva sesion
+[2019/05/08 08:18:29] Utils::createSession empezo una nueva sesion
+[2019/05/08 08:18:29] SQL Query: SELECT * FROM mfo_genero
+[2019/05/08 08:18:29] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/08 08:19:02] Utils::createSession empezo una nueva sesion
+[2019/05/08 08:19:02] SQL Query: SELECT * FROM mfo_genero
+[2019/05/08 08:19:02] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/05/08 08:19:10] Utils::createSession empezo una nueva sesion
+[2019/05/08 08:19:10] SQL Query: SELECT * FROM mfo_genero
+[2019/05/08 08:19:10] SQL Query: SELECT * FROM mfo_sectorindustrial
