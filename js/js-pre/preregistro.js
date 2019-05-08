@@ -204,7 +204,7 @@ if($('#tipo_documentacion').length){
 	$('#tipo_documentacion').on('change blur', function(){
 		var textoSelect = $(this).children('option:selected').text();
 		var docCampo = $('#documento');
-		docCampo.attr('placeholder', textoSelect+" *")
+		docCampo.attr('placeholder', "Número de "+textoSelect+" *")
 		if($(this).val() != null){
 			docCampo.removeAttr('disabled');
 			$('#tipo_doc').val($(this).val());
