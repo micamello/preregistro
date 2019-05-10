@@ -1,19 +1,28 @@
 <nav class="menu-timer navbar">
-      <div class="container">
-        <a class="navbar-brand" href="https://www.micamello.com.ec/desarrollov3">
-          <img class="camello" style="padding-top: 20px;padding-left: 20px;height: 120px;" src="<?php echo PUERTO."://".HOST;?>/img_pre/logo.png"><br>
-        </a>
-        <ul class="timer-bloque nav navbar-nav navbar-right" style="padding-top: 20px;">                                               
-            <li id="regEmpMic">
-              <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-facebook"></i></a>
-            </li>
-            <li id="regEmpMic">
-              <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-twitter"></i></a>
-            </li>
-            <li id="regEmpMic">
-                <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-instagram"></i></a>
-            </li>
-        </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+            <a class="navbar-brand" href="https://www.micamello.com.ec/desarrollov3">
+                <img class="camello" style="padding-top: 20px;padding-left: 20px;height: 120px;" src="<?php echo PUERTO."://".HOST;?>/img_pre/logo.png"><br>
+            </a>
+        </div>
+      <div class="col-md-4 col-sm-6 col-xs-12"> 
+        <ul class="timer-bloque nav navbar-nav navbar-right">                          
+                                     
+                <li id="regEmpMic">
+                  <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-facebook"></i></a>
+                </li>
+                <li id="regEmpMic">
+                  <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-twitter"></i></a>
+                </li>
+                <li id="regEmpMic">
+                        <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-instagram"></i></a>
+                    </li>
+
+                
+                </ul>
+         </div>
+        </div>
     </div> 
 </nav>
 

@@ -1356,3 +1356,10 @@
 [2019/05/10 09:59:20] SQL Query: SELECT * FROM mfo_genero
 [2019/05/10 09:59:20] SQL Query: SELECT * FROM mfo_sectorindustrial
 [2019/05/10 09:59:22] Utils::createSession empezo una nueva sesion
+[2019/05/10 10:19:22] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:06:31] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:09:22] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:09:24] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:10:39] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:10:59] Utils::createSession empezo una nueva sesion
+[2019/05/10 05:11:12] Utils::createSession empezo una nueva sesion
