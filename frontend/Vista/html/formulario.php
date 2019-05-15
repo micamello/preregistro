@@ -30,7 +30,7 @@
                                     <?php 
                                         if(!empty($arrsectorind)){
                                             foreach ($arrsectorind as $sector) {
-                                                echo "<option value='".$sector['id_sectorindustrial']."'>".$sector['descripcion']."</option>";
+                                                echo "<option value='".$sector['id_sectorindustrial']."'>".utf8_encode($sector['descripcion'])."</option>";
                                             }
                                         }
                                     ?>
@@ -96,7 +96,7 @@
                             <div class="col-md-12">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" class="terminosCond" name="terminosCond" id="terminosCond"> He le&iacute;do y acepto las <a class="link" href="https://www.micamello.com.ec/desarrollov3/docs/politicas_de_privacidad1.pdf" target="_blank">pol&iacute;ticas de privacidad</a> y <a class="link" href="https://www.micamello.com.ec/desarrollov3/docs/terminos_y_condiciones1.pdf" target="_blank">t&eacute;rminos y condiciones</a>
+                                        <input type="checkbox" class="terminosCond" name="terminosCond" id="terminosCond"> He le&iacute;do y acepto las <a class="link" href="https://www.micamello.com.ec/docs/politicas_de_privacidad1.pdf" target="_blank">pol&iacute;ticas de privacidad</a> y <a class="link" href="https://www.micamello.com.ec/docs/terminos_y_condiciones1.pdf" target="_blank">t&eacute;rminos y condiciones</a>
                                     </label>
                                     <label>Nota: Después de registrarte te llegará un E-mail.</label>
                                 </div>

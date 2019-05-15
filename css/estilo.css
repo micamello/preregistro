@@ -98,6 +98,10 @@ display: inline;
 #drop-tit{
     text-align: left;
 }
+.imagen-perfil img{
+    width: 120px;
+    height: 120px;
+}
 /*MENU*/
 /*LOGO*/
 
@@ -143,6 +147,7 @@ display: inline;
     color: white;
     font-size: 16px;
 }
+
 .btn-minimalista{
     background-color: transparent;
     border: 2px solid #fff;
@@ -242,9 +247,7 @@ display: inline;
     margin-top: 10px;
  }
  .timer-bloque{
-    /*background-image: url(../img/bloque-01.png);
-    background-repeat: no-repeat;
-*/
+    padding-top: 20px;
  }
  .wraper{
         padding: 4% 4% 0% 4%;
@@ -252,7 +255,7 @@ display: inline;
 }
  .texto-timer{
     color: #204478;
-    font-size: 35pt;
+    font-size: 25pt;
     text-align: right;
     font-family: ‘Antipasto’;
  }
@@ -260,10 +263,10 @@ display: inline;
     color: #2d2d2d;
     font-family: ‘Antipasto’;
     text-align: center;
-    font-size: 20pt;
+    font-size: 15pt;
     border: 2px solid #2d2d2d;
     padding: 20px;
-    margin-top: 20px;
+
     
  }
  .timer{
@@ -284,7 +287,13 @@ display: inline;
     float: right;
  }
 
-
+#filtro-movil{
+    cursor:pointer;
+    text-align: center;
+}
+.breadcrumb{
+    text-align: left;
+}
 #prox{
         font-size: 100pt;
     }
@@ -319,9 +328,37 @@ display: inline;
     width: 40px;
     border-radius: 50%;
 }
-
+#btn-filtro-1{
+    background-color: #f2f2f2;
+    border-color: none;
+    color: #939393;
+    border-radius: 10px;
+}
+#icono-filtro{
+    border: 0;
+    background-color: #f2f2f2;
+    padding:0px; 
+    cursor:pointer;
+}
+#texto-edit{
+    text-align: center;
+}
+#img-res-3{
+    height: auto;
+}
 /*PANTALLAS PEQUEÑAS*/
 @media screen and (max-width:600px){
+    #icono-mover {
+        position: inherit;
+    }
+    #texto-edit{
+        font-size: 12pt;
+    }
+    .timer-bloque{
+        text-align: right;
+        padding-top: 60px;
+
+    }
     #back-countdiown li{
        margin-bottom: 20px;
     }
@@ -339,11 +376,27 @@ display: inline;
     }
     .padding-5{
     padding: 5px 0px;
-}
+    }
+    #boton-blue{
+        font-size: 10px;
+        padding: 10px 20px;
+
+    }
+    .img-res2{
+        width: 70px;
+    }
 }
 
 /*PANTALLAS MEDIANAS*/
 @media only screen and (max-width:1000px) and (min-width:481px){
+#boton-blue{
+        font-size: 14px;
+        padding: 10px 20px;
+
+    }
+    .img-res2{
+        width: 100px;
+    }
     #prox{
         font-size: 50pt;
     }
@@ -354,6 +407,10 @@ display: inline;
     }
     .imagen{
         width: 40px;
+    }
+    .timer-bloque{
+        text-align: right;
+
     }
 }
 /*PANTALLAS GRANDES*/
@@ -692,6 +749,13 @@ border-left: 1px solid #204478
 .subt-detalle{
  font-size: 12pt;   
 }
+.subt{
+    font-family: 'Roboto';
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 10px;
+    color: #204478;
+}
 /*INTRO TEST*/
 .tit-test{
     text-align: center;
@@ -967,6 +1031,11 @@ padding-top: 10px;
     
     
 }
+#barra{
+    background-color: #4b98dd;
+    color: white;
+    padding-top: 5px;
+}
 .espacio{
     margin-bottom: 10px;
 }
@@ -979,10 +1048,9 @@ padding-top: 10px;
 }
 
 .indicadores {
-    position: relative;
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 .texto-white{
     color: white;
@@ -1016,6 +1084,7 @@ padding-top: 10px;
 }
 .menu{
     color:white;
+    position: sticky;
 }
 .link{
     font-weight: bold;
