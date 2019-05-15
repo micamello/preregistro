@@ -16,7 +16,7 @@
 	<meta property="og:image" content="https://www.micamello.com.ec/">
 
 	<!-- css del preregistro -->
-	<link rel="icon" type="image/x-icon" href="https://www.micamello.com.ec/desarrollov3/imagenes/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://www.micamello.com.ec/imagenes/favicon.ico">
 	<?php
 	    if (isset($template_css) && is_array($template_css)){
 	      foreach($template_css as $file_css){

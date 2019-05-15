@@ -66,13 +66,14 @@
                    <p class="counter"><b>SEGUNDOS</b></p>
                 </li>
             </ul><!-- #back-countdiown -->
-            <a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">  
+
             <button class="btn-blue">
-              Pre regístrate
+              <a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">Pre regístrate</a>
             </button>
-          </a>
+
   
               </div>
           </div>                
       </section><!-- .countdown-wrapper -->
     </section>
+
