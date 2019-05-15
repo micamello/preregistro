@@ -27,52 +27,51 @@
 </nav>
 
 <section class="container-fluid wraper">
-      <header class="header">
       <div class="row">
-        <div class="col-md-2">
-          
-        </div>
-        </div>
-          <div class="row">
         <div class="col-md-12">
-        <div class="col-md-6">
-          <p class="texto-timer">LA FORMA MÁS FÁCIL Y RÁPIDA DE ENCONTRAR EMPLEO Y AL CANDIDATO IDEAL</p>
-        </div>
-        <div class="col-md-6">
-          <p align="middle" class="second-text-timer">Ahorra tiempo / Encuentra un trabajo mejor / Renueva y enriquece el talento humano de tu empresa / Descubre los mejores perfiles</p>
+          <div class="col-md-6">
+              <p class="texto-timer">LA FORMA MÁS FÁCIL Y RÁPIDA DE ENCONTRAR EMPLEO Y AL CANDIDATO IDEAL</p>
+            </div>
+            <div class="col-md-6 visible-lg">
+              <div align="" class="css-typing second-text-timer">
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Ahorra tiempo</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Encuentra un trabajo mejor</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Renueva y enriquece el talento humano de tu empresa</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Descubre los mejores perfiles</p></div>
+            </div>
+            <div class="col-md-6 visible-md visible-sm visible-xs">
+              <div align="left" class="second-text-timer">
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Ahorra tiempo</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Encuentra un trabajo mejor</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Renueva y enriquece el talento humano de tu empresa</p>
+                <p clas="col-md-12 col-xs-12 col-sm-12">• Descubre los mejores perfiles</p></div>
+            </div>
         </div>
       </div>
-      </div>
-      </header>
       <!-- .header -->
-      <section class="countdown-wrapper" align="center">
-          <div class="">
-              <div align="center">
-                  <ul class="timer" id="back-countdiown">
-              <li style="width:200px">                    
-                <span class="days"  style="width:200px">48</span>
-                <p class="counter"><b>DÍAS</b></p>
-              </li>
-              <li style="width:200px">
-                <span class="hours"  style="width:200px">01</span>
-                <p class="counter"><b>HORAS</b></p>
-              </li>
-              <li style="width:200px">
-                <span class="minutes"  style="width:200px">06</span>
-                <p class="counter"><b>MINUTOS</b></p>
-              </li>
-                <li style="width:200px">
-                   <span class="seconds"  style="width:200px">16</span>
-                   <p class="counter"><b>SEGUNDOS</b></p>
-                </li>
-            </ul><!-- #back-countdiown -->
-
-            <button class="btn-blue">
-              <a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">Pre regístrate</a>
-            </button>
-
-  
-              </div>
-          </div>                
-      </section><!-- .countdown-wrapper -->
-    </section>
+  <div class="col-md-12 " align="center" style="margin-top: -20pt;margin-bottom: -30pt;">
+    <div align="center">
+      <ul class="timer" id="back-countdiown"style="">
+        <li id="ancho-150">                    
+          <span class="days"  id="ancho-150" >48</span>
+          <p class="counter"><b>DÍAS</b></p>
+        </li>
+        <li id="ancho-150">
+          <span class="hours" id="ancho-150" >01</span>
+          <p class="counter"><b>HORAS</b></p>
+        </li>
+        <li id="ancho-150">
+          <span class="minutes"   id="ancho-150">06</span>
+          <p class="counter"><b>MINUTOS</b></p>
+        </li>
+        <li id="ancho-150">
+          <span class="seconds"  id="ancho-150">16</span>
+          <p class="counter"><b>SEGUNDOS</b></p>
+        </li>
+      </ul>
+      <button class="btn-blue mover-boton"style="">
+          <a href="<?php echo PUERTO.'://'.HOST; ?>/registrodatos/" class="texto-white">Pre regístrate</a>
+      </button>
+    </div>            
+  </div>
+</section>
