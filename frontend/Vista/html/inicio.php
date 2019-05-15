@@ -10,14 +10,14 @@
         <ul class="timer-bloque nav navbar-nav navbar-right">                          
                                      
                 <li id="regEmpMic">
-                  <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-facebook"></i></a>
+                  <a href="<?php echo URL_FACEBOOK;?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-facebook"></i></a>
                 </li>
                 <li id="regEmpMic">
-                  <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-twitter"></i></a>
+                  <a href="<?php echo URL_TWITTER;?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-twitter"></i></a>
                 </li>
                 <li id="regEmpMic">
-                        <a href="#" id="regEmpMic"><i class="timer-iconos fa fa-instagram"></i></a>
-                    </li>
+                    <a href="<?php echo URL_INSTAGRAM;?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-instagram"></i></a>
+                </li>
 
                 
                 </ul>
