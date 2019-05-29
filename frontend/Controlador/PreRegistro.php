@@ -8,6 +8,7 @@ class Controlador_PreRegistro extends Controlador_Base {
       case 'buscarDni':
         $dni = Utils::getParam('dni', '', $this->data);
         $buscardni = Modelo_Usuario::existeDni($dni);
+        Utils::log(print_r($buscardni , true));
         Vista::renderJSON($buscardni);
       break;
       case 'buscarCorreo':

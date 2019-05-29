@@ -11,7 +11,7 @@ body {
 }
 .register{
     background-color: #204478;
-    margin-top: 3%;
+    /*margin-top: 3%;*/
     padding: 3%;
     
 }
@@ -57,7 +57,7 @@ body {
     margin-top: -9%;
 }
 .register .register-form{
-    padding: 10%;
+    padding: 10% 10% 0% 10%;
     margin-top: 10%;
 }
 .btnRegister{

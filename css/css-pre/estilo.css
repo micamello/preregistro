@@ -493,3 +493,13 @@ body{
   /*position: absolute;*/
   bottom: 220px;
 }
+.campo{
+  color: #4b5052;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 15px;
+}
+.no{
+  color: #fc3535 !important;
+  font-size: 22px !important;
+}

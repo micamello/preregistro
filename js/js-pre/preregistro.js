@@ -1,3 +1,4 @@
+$('body').css('background-color', '#204478');
 var tipoUsuarioval;
 $(document).ready(function(){
 	if(leerCookie('preRegistro') != null){
@@ -98,6 +99,8 @@ function mostrarCampos(idForm){
 	}
 	if(idForm == 1){
 		buttonChange(1);
+		// console.log($('#documento').siblings('label')[0]);
+		$('#documento').siblings('label').html('Documento <span class="no">*</span>');
 		$('#documento').attr('placeholder', 'Documento *');
 		$('#telefono').attr('placeholder', 'Celular *');
 		$('#correo').parent().removeClass('col-md-12').addClass('col-md-6');
@@ -110,6 +113,7 @@ function mostrarCampos(idForm){
 	}
 	else{
 		buttonChange(2);
+		$('#documento').siblings('label').html('RUC <span class="no">*</span>');
 		$('#documento').attr('placeholder', 'RUC *');
 		$('#telefono').attr('placeholder', 'Teléfono *');
 		$('#correo').parent().removeClass('col-md-6').addClass('col-md-12');
@@ -204,8 +208,10 @@ if($('#tipo_documentacion').length){
 	$('#tipo_documentacion').on('change blur', function(){
 		var textoSelect = $(this).children('option:selected').text();
 		var docCampo = $('#documento');
-		docCampo.attr('placeholder', "Número de "+textoSelect+" *")
+		
 		if($(this).val() != null){
+			docCampo.siblings('label').html('Número de '+textoSelect+ '<span class="no">*</span>');
+			docCampo.attr('placeholder', "Número de "+textoSelect+" *");
 			docCampo.removeAttr('disabled');
 			$('#tipo_doc').val($(this).val());
 				if(docCampo.val() != ""){ 
