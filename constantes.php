@@ -22,7 +22,7 @@ define('MAIL_USERNAME','info@micamello.com.ec');
 define('MAIL_PASSWORD','bXKX695=ukC@');
 define('MAIL_PORT','587');
 define('MAIL_HOST','mail.micamello.com.ec');
-define('URL_FACEBOOK','#');
-define('URL_TWITTER','#');
-define('URL_INSTAGRAM','#');
+define('URL_FACEBOOK','https://www.facebook.com/MiCamello.com.ec/');
+define('URL_TWITTER','https://twitter.com/MiCamelloec');
+define('URL_INSTAGRAM','https://www.instagram.com/micamelloec/');
 ?>

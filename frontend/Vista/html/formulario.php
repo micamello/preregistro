@@ -12,7 +12,7 @@
                 </div>
 
                 <h3 class="register-heading">Registrarse como Candidato</h3>
-                <form id="preregistroFormulario" action="<?php echo PUERTO."://".HOST;?>/preregistro/" method="POST">
+                <form id="preregistroFormulario" action="<?php echo PUERTO."://".HOST;?>/preregistro/" method="POST" autocomplete="off">
                     
                     <div class="row register-form">
                             <input type="hidden" name="form_pre" value="1">
