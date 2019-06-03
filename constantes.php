@@ -25,4 +25,5 @@ define('MAIL_HOST','mail.micamello.com.ec');
 define('URL_FACEBOOK','https://www.facebook.com/MiCamello.com.ec/');
 define('URL_TWITTER','https://twitter.com/MiCamelloec');
 define('URL_INSTAGRAM','https://www.instagram.com/micamelloec/');
+define('URL_LINKEDIN','https://www.linkedin.com/company/mi-camello-s-a/');
 ?>

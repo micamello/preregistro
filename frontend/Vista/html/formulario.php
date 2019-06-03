@@ -1,6 +1,7 @@
-<img style="padding:0px; margin: 10px; width: 10%;" class="img-responsive" src="<?php echo PUERTO."://".HOST;?>/img_pre/logo.png" alt="micamellologo">
+<div style="margin-top: -15px;">
+    <img style="height:120px;padding-top: 20px;padding-left: 20px;" class="img-responsive" src="<?php echo PUERTO."://".HOST;?>/imagenes/logo-blanco-vertical.png" alt="micamellologo">
 <div>
-    <div class="container register" style="background-color: #204478">
+    <div class="container register" style="background-color: #204478; padding-top:0px;">
     <div class="row">
         <div class="col-md-9 register-right" id="card_register"> 
             <div class="tab-content" id="myTabContent">
@@ -16,7 +17,7 @@
                     <h3 class="register-heading">Registrarse como Candidato</h3>
                     <form id="preregistroFormulario" action="<?php echo PUERTO."://".HOST;?>/preregistro/" method="POST">
                     
-                    <div class="row register-form">
+                    <div class="row register-form" style="padding: 6% 4% 0% 4%">
                             <input type="hidden" name="form_pre" value="1">
                             <input type="hidden" name="tipo_usuario" id="tipo_usuario" value="">
                             <input type="hidden" name="tipo_doc" id="tipo_doc">
@@ -129,3 +130,5 @@
 </div>
     
     
+
+</div>

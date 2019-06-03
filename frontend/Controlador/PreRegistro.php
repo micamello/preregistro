@@ -45,7 +45,7 @@ class Controlador_PreRegistro extends Controlador_Base {
         self::guadarRegistro($data);
         setcookie('preRegistro', null, -1, '/');
         $nombres = $data['nombre'].((isset($data['apellidos'])) ? " ".$data['apellidos'] : '');
-        if (!$this->correoPreregistro($data['correo'],$nombres)){
+        if (!$this->correoPreregistro($data['correo'],$nombres, $tipo_usuario)){
             throw new Exception("Error en el env\u00EDo de correo, por favor intente denuevo");
         }
 
@@ -150,9 +150,11 @@ class Controlador_PreRegistro extends Controlador_Base {
       }
   }
 
-  public function correoPreregistro($correo,$nombres){
-    $email_body = Modelo_TemplateEmail::obtieneHTML("PREREGISTRO_USUARIO");  
-    $email_body = str_replace("%NOMBRES%", $nombres, $email_body); 
+  public function correoPreregistro($correo,$nombres,$tipo_usuario){
+    $template = "PREREGISTRO_USUARIO";
+    if($tipo_usuario == 2){$template = "PREREGISTRO_EMPRESA";}
+    $email_body = Modelo_TemplateEmail::obtieneHTML($template);  
+    $email_body = str_replace("%NOMBRES%", $nombres, $email_body);
     if (Utils::envioCorreo($correo,"Preregistro Usuario",$email_body)){
       return true;
     }

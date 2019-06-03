@@ -1,5 +1,5 @@
 <body style="background-color: #f4f4f4; height: none">
-  <div style="background-color: #283c61;height: 300px;position: absolute;width: 100%">
+  <div style="background-color: #204478;height: 300px;position: absolute;width: 100%">
   </div>
   <nav class="menu-timer navbar">
     <div class="container-fluid">
@@ -19,6 +19,9 @@
                   </div>
                   <div class="cont-rrss" id="regEmpMic">
                         <a href="<?php echo URL_INSTAGRAM;?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-instagram"></i></a>
+                    </div>
+                    <div class="cont-rrss" id="regEmpMic">
+                        <a href="<?php echo URL_LINKEDIN; ?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-linkedin"></i></a>
                     </div>
                 </ul>
            </div>
