@@ -747,7 +747,8 @@ function leerCookie(name) {
 }
 
 function safari(){
-	if(navigator.userAgent.indexOf("Safari") > -1){
+	var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	if(isSafari == true){
 		var safariGrid = $('.form-group');
 		$.each(safariGrid, function(indice, elemento){
 			$(elemento).removeClass('col-md-6');
