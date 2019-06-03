@@ -498,7 +498,7 @@
   .navbar-brand>img {
     height: 88%;
     padding: 0px;
-    margin-top: -1px;
+    /*margin-top: -1px;*/
     width: auto;
   }
 

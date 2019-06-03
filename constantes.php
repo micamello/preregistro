@@ -25,4 +25,5 @@ define('MAIL_HOST','mail.micamello.com.ec');
 define('URL_FACEBOOK','#');
 define('URL_TWITTER','#');
 define('URL_INSTAGRAM','#');
+define('URL_LINKEDIN','#');
 ?>
