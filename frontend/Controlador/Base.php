@@ -14,7 +14,7 @@ abstract class Controlador_Base{
     global $_SUBMIT;
     $this->device = $device;
     $this->data = $_SUBMIT;        
-    self::verificaCompra();
+    // self::verificaCompra();
   }
   
   public function redirectToController($controladorNombre, $params = array()){  
@@ -54,16 +54,16 @@ abstract class Controlador_Base{
     return $data;
   }
   
-  public function verificaCompra(){    
-    if (isset($_SESSION['mfo_datos']['actualizar_planes']) && $_SESSION['mfo_datos']['actualizar_planes'] == 1){      
-      $arrplanes = Modelo_UsuarioxPlan::planesActivos($_SESSION["mfo_datos"]["usuario"]["id_usuario"],
-                                                      $_SESSION["mfo_datos"]["usuario"]["tipo_usuario"]);
-      if (count($_SESSION['mfo_datos']['planes']) <> count($arrplanes)){
-        $_SESSION['mfo_datos']['planes'] = $arrplanes;
-        unset($_SESSION['mfo_datos']['actualizar_planes']);       
-      }      
-    }
-  }
+  // public function verificaCompra(){    
+  //   if (isset($_SESSION['mfo_datos']['actualizar_planes']) && $_SESSION['mfo_datos']['actualizar_planes'] == 1){      
+  //     $arrplanes = Modelo_UsuarioxPlan::planesActivos($_SESSION["mfo_datos"]["usuario"]["id_usuario"],
+  //                                                     $_SESSION["mfo_datos"]["usuario"]["tipo_usuario"]);
+  //     if (count($_SESSION['mfo_datos']['planes']) <> count($arrplanes)){
+  //       $_SESSION['mfo_datos']['planes'] = $arrplanes;
+  //       unset($_SESSION['mfo_datos']['actualizar_planes']);       
+  //     }      
+  //   }
+  // }
 
   public function linkRedesSociales(){
     if( strstr(dirname(__FILE__), 'C:') ){        
