@@ -8,3 +8,5 @@ RewriteRule ^test/?$ %{ENV:REWRITEBASE}index.php?mostrar=cuestionariom2 [L]
 #Preregistro
 RewriteRule ^preregistro/?$ %{ENV:REWRITEBASE}index.php?mostrar=preregistro&opcion=guardardatos [L]
 RewriteRule ^registrodatos/?$ %{ENV:REWRITEBASE}index.php?mostrar=preregistro&opcion=registro [L]
+RewriteRule ^politicaprivacidad/?$ %{ENV:REWRITEBASE}index.php?mostrar=preregistro&opcion=politicaprivacidad [L]
+RewriteRule ^terminoscondiciones/?$ %{ENV:REWRITEBASE}index.php?mostrar=preregistro&opcion=terminoscondiciones [L]

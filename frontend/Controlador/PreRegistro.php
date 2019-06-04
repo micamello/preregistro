@@ -22,6 +22,16 @@ class Controlador_PreRegistro extends Controlador_Base {
       case 'guardardatos':
         self::proceso();
       break;
+      case 'politicaprivacidad':
+      $tags["template_css"][] = "estilo";
+      $tags["template_css"][] = "bootstrap";
+      Vista::render('documentos/politicaprivacidad_'.SUCURSAL_ID, $tags);
+      break;
+      case 'terminoscondiciones':
+      $tags["template_css"][] = "estilo";
+      $tags["template_css"][] = "bootstrap";
+      Vista::render('documentos/terminoscondiciones_'.SUCURSAL_ID, $tags);
+      break;
       default:
         self::defaultScreen();
       break;

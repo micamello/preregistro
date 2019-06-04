@@ -650,3 +650,90 @@
 [2019/06/03 02:59:17] Utils::createSession empezo una nueva sesion
 [2019/06/03 02:59:17] SQL Query: SELECT * FROM mfo_genero
 [2019/06/03 02:59:17] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 01:14:39] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:15:50] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:16:00] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:18:11] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:21:03] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:21:03] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 01:21:03] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 01:36:50] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:36:50] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 01:36:50] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 01:38:14] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:38:14] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 01:38:14] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 01:40:35] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:40:35] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 01:40:35] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 01:40:41] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:41:00] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:45:58] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:48:00] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:48:14] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:53:14] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:53:29] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:56:23] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:57:05] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:59:08] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:59:49] Utils::createSession empezo una nueva sesion
+[2019/06/04 01:59:58] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:14] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:14] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:14] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:15] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:16] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:16] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:17] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:17] SQL Query: SELECT * FROM mfo_genero
+[2019/06/04 02:00:17] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/04 02:00:54] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:00:56] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:01:52] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:04:46] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:04:53] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:11] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:15] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:20] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:21] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:25] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:32] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:05:43] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:06:14] Utils::createSession empezo una nueva sesion
+[2019/06/04 02:06:17] Utils::createSession empezo una nueva sesion
