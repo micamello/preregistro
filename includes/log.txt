@@ -737,3 +737,172 @@
 [2019/06/04 02:05:43] Utils::createSession empezo una nueva sesion
 [2019/06/04 02:06:14] Utils::createSession empezo una nueva sesion
 [2019/06/04 02:06:17] Utils::createSession empezo una nueva sesion
+[2019/06/11 10:54:58] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:01:42] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:02:23] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:02:23] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:02:23] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:03:06] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:03:10] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:20:00] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:20:00] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:20:00] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:22:03] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:22:03] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:22:03] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:24:09] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:24:09] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:24:09] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:24:16] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:24:16] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:24:17] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:25:34] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:25:34] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:25:34] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:25:38] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:25:38] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:25:38] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:29:01] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:29:01] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:29:01] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:29:30] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:29:30] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:29:30] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:29:39] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:29:39] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:29:39] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:30:03] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:30:03] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:30:03] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:30:04] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:30:04] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:30:04] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:30:24] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:30:24] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:30:24] Array
+(
+)
+
+[2019/06/11 11:30:42] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:30:42] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:33:56] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:33:56] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:33:58] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:33:58] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:33:58] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:33:58] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:33:59] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:33:59] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:00] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:00] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:02] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:02] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:06] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:06] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:17] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:17] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:19] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:19] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:34:19] Array
+(
+)
+
+[2019/06/11 11:34:19] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:19] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:34:19] Array
+(
+)
+
+[2019/06/11 11:34:19] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:19] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:21] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:34:21] Array
+(
+)
+
+[2019/06/11 11:34:21] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:34:21] Array
+(
+)
+
+[2019/06/11 11:34:21] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:21] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC2354654
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:34:21] SQL execute: INSERT INTO mfo_preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,fecha_nacimiento,id_genero,term_cond) VALUES ('Eder','Pozo','edervpozo@gmail.com','3','EC2354654','0968597677','2019-06-11 11:34:21','1','1994-03-13','1','1')
+[2019/06/11 11:34:21] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
+[2019/06/11 11:34:23] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:36:52] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:37:13] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:37:13] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:37:13] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:37:29] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:37:29] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:37:29] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:41:30] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:41:31] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC654654
+[2019/06/11 11:41:31] Array
+(
+)
+
+[2019/06/11 11:42:53] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:42:54] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:43:01] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:01] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC654654
+[2019/06/11 11:43:01] Array
+(
+)
+
+[2019/06/11 11:43:02] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:02] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC654654
+[2019/06/11 11:43:03] Array
+(
+)
+
+[2019/06/11 11:43:04] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:05] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:43:05] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:05] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC654654
+[2019/06/11 11:43:06] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:43:06] SQL execute: INSERT INTO mfo_preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,fecha_nacimiento,id_genero,term_cond) VALUES ('Eder','Pozo','edervpozo@gmail.com','3','EC654654','0968597677','2019-06-11 11:43:06','1','1994-03-13','1','1')
+[2019/06/11 11:43:06] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
+[2019/06/11 11:43:13] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:29] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:43:29] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:43:29] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:46:02] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:46:02] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:46:02] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:46:13] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:46:14] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:46:44] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:46:45] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC365454
+[2019/06/11 11:46:45] Array
+(
+)
+
+[2019/06/11 11:47:00] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:47:00] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edereder@mail.com'
+[2019/06/11 11:47:04] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:47:04] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC365454
+[2019/06/11 11:47:04] Array
+(
+)
+
+[2019/06/11 11:47:06] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:47:07] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC365454
+[2019/06/11 11:47:07] Array
+(
+)
+
+[2019/06/11 11:47:08] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:47:08] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edereder@mail.com'
+[2019/06/11 11:47:10] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:47:10] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = EC365454
+[2019/06/11 11:47:10] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edereder@mail.com'
+[2019/06/11 11:47:11] SQL execute: INSERT INTO mfo_preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,fecha_nacimiento,id_genero,term_cond) VALUES ('Eder','Pozo','edereder@mail.com','3','EC365454','0968597677','2019-06-11 11:47:10','1','1994-03-13','1','1')
+[2019/06/11 11:47:11] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
+[2019/06/11 11:47:43] Utils::createSession empezo una nueva sesion
