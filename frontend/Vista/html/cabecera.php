@@ -17,6 +17,7 @@
 
 	<!-- css del preregistro -->
 	<link rel="icon" type="image/x-icon" href="https://www.micamello.com.ec/imagenes/favicon.ico">
+	  <link rel="stylesheet" href="<?php echo PUERTO."://".HOST;?>/css/sweetalert.v2.css">
 	<?php
 	    if (isset($template_css) && is_array($template_css)){
 	      foreach($template_css as $file_css){
