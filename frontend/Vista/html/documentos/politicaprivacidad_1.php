@@ -1,3 +1,5 @@
+<body>
+  <input type="hidden" name="" id="blockRighClick">
 <br>
 <div class="text-center">
   <h2 class="titulo">Política de Privacidad</h2>
@@ -302,3 +304,13 @@ Sí puede contratar varios planes y hacer uso de cada uno de ellos durante su ti
 Contactos
 Cualquier inquietud respecto de los planes puede comunicarse al correo info@micamello.com.ec</p>
 </div>
+<script src="<?php echo PUERTO."://".HOST;?>/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+  if($('#blockRighClick').length){
+    // console.log("e");
+    $("body").on("contextmenu",function(e){
+     return false;
+   });
+  }
+</script>
+</body>

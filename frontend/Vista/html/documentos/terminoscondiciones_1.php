@@ -1,3 +1,5 @@
+<body>
+  <input type="hidden" name="" id="blockRighClick">
 <br>
 <div class="text-center">
   <h2 class="titulo">Términos y Condiciones</h2>
@@ -431,3 +433,14 @@ a la dirección de Estados Unidos de Norteamérica, en 4828 Hopespring Dr Orland
 32829-8643, <br><br>
 Estos Términos y Condiciones fueron actualizados por última vez el 07 de Enero de 2018.<br><br></p>
 </div>
+
+<script src="<?php echo PUERTO."://".HOST;?>/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+  if($('#blockRighClick').length){
+      // console.log("e");
+      $("body").on("contextmenu",function(e){
+       return false;
+     });
+  }
+</script>
+</body>

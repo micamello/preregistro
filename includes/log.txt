@@ -1,0 +1,29 @@
+[2019/06/11 11:51:08] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:17] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:19] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:19] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 11:51:19] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 11:51:25] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:25] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:26] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:26] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:27] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:27] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:27] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:27] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:29] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:29] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:29] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:29] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 11:51:29] Utils::createSession empezo una nueva sesion
+[2019/06/11 11:51:29] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpozo@gmail.com'
+[2019/06/11 01:54:34] Utils::createSession empezo una nueva sesion
+[2019/06/11 01:54:38] Utils::createSession empezo una nueva sesion
+[2019/06/11 01:54:38] SQL Query: SELECT * FROM mfo_genero
+[2019/06/11 01:54:38] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/11 01:54:41] Utils::createSession empezo una nueva sesion
+[2019/06/11 01:54:43] Utils::createSession empezo una nueva sesion
+[2019/06/11 02:03:03] Utils::createSession empezo una nueva sesion
+[2019/06/11 02:03:13] Utils::createSession empezo una nueva sesion
+[2019/06/11 02:04:11] Utils::createSession empezo una nueva sesion
+[2019/06/11 02:04:23] Utils::createSession empezo una nueva sesion
