@@ -102,10 +102,10 @@
                                 <div></div>
                                 <input class="form-control" type="text" name="correo" id="correo" placeholder="Correo *">
                             </div>
-                            <div class="text-center">
+                            <div class="col-md-12">
                                 <div class="form-group check_box">
                                     <div></div>
-                                    <div class="col-md-12">
+                                    <div class="text-center">
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox" class="terminosCond" name="terminosCond" id="terminosCond"> He le&iacute;do y acepto las <a class="link" href="<?php echo PUERTO.'://'.HOST; ?>/politicaprivacidad/" target="_blank">pol&iacute;ticas de privacidad</a> y <a class="link" href="<?php echo PUERTO.'://'.HOST; ?>/terminoscondiciones/" target="_blank">t&eacute;rminos y condiciones</a>
