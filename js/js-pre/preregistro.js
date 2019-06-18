@@ -236,8 +236,14 @@ if($('#tipo_documentacion').length){
 }
 
 if($('#documento').length){
+	$('#documento').on('keypress', function(event){
+			if (event.keyCode == 0 || event.keyCode == 32){
+				event.preventDefault();
+			}
+		});
 	$('#documento').on('blur', function(){
 		if($(this).val() != ""){
+			$(this).val($(this).val().trim());
 			var tipoDocCampo = $('#tipo_doc').val();
 			if(DniRuc_Validador($(this), tipoDocCampo) == true){
 				if(searchAjax($(this)) != true){
@@ -292,8 +298,14 @@ if($('#id_genero').length){
 
 
 if($('#telefono').length){
+	$('#telefono').on('keypress', function(event){
+			if (event.keyCode == 0 || event.keyCode == 32){
+				event.preventDefault();
+			}
+		});
 	$('#telefono').on('blur change', function(){
 		if($(this).val() != ""){
+			$(this).val($(this).val().trim());
 			if(tipoUsuarioval == 1){
 				if(!validarCelCand($(this).val())){
 					crearMensajeError($(this), "Mínimo 10 dígitos, máx. 15");
@@ -318,8 +330,14 @@ if($('#telefono').length){
 }
 
 if($('#correo').length){
+	$('#correo').on('keypress', function(event){
+		if (event.keyCode == 0 || event.keyCode == 32){
+			event.preventDefault();
+		}
+	});
 	$('#correo').on('blur', function(){
 		if($(this).val() != ""){
+			$(this).val($(this).val().trim());
 			if(validarCorreo($(this).val())){
 				if(searchAjax($(this)) != true){
 					eliminarMensajeError($(this));
