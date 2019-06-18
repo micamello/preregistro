@@ -12,7 +12,7 @@ class Controlador_PreRegistro extends Controlador_Base {
       break;
       case 'buscarCorreo':
         $correo = Utils::getParam('correo', '', $this->data);
-        $buscarcorreo = Modelo_Usuario::existeCorreo($correo);
+        $buscarcorreo = Modelo_Usuario::existeCorreo(trim($correo));
         Vista::renderJSON($buscarcorreo);
       break;
       case 'registro':
@@ -54,7 +54,7 @@ class Controlador_PreRegistro extends Controlador_Base {
         self::guadarRegistro($data);
         setcookie('preRegistro', null, -1, '/');
         $nombres = $data['nombre'].((isset($data['apellidos'])) ? " ".$data['apellidos'] : '');
-        if (!$this->correoPreregistro($data['correo'],$nombres, $tipo_usuario)){
+        if (!$this->correoPreregistro(trim($data['correo']),$nombres, $tipo_usuario)){
             throw new Exception("Error en el env\u00EDo de correo, por favor intente denuevo");
         }
 
@@ -75,7 +75,7 @@ class Controlador_PreRegistro extends Controlador_Base {
     if($data['tipo_usuario'] == 1){
       $datos_usuario = array('nombres'=>$data['nombre'], 
                               'apellidos'=>$data['apellidos'], 
-                              'correo'=>$data['correo'], 
+                              'correo'=>trim($data['correo']), 
                               'tipo_doc'=>$data['tipo_doc'], 
                               'dni'=>$data['documento'], 
                               'telefono'=>$data['telefono'], 
@@ -87,7 +87,7 @@ class Controlador_PreRegistro extends Controlador_Base {
     }
     else{
       $datos_usuario = array('nombres'=>$data['nombre'],
-                              'correo'=>$data['correo'], 
+                              'correo'=>trim($data['correo']), 
                               'tipo_doc'=>$data['tipo_doc'], 
                               'dni'=>$data['documento'], 
                               'telefono'=>$data['telefono'], 
@@ -153,7 +153,7 @@ class Controlador_PreRegistro extends Controlador_Base {
         throw new Exception("El correo ingresado no es v\u00E1lido");
       }
 
-      $correo_verify = Modelo_Usuario::existeCorreo($data['correo']);
+      $correo_verify = Modelo_Usuario::existeCorreo(trim($data['correo']));
       if(!empty($correo_verify)){
         throw new Exception("El correo ingresado ya existe");
       }
