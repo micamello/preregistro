@@ -591,7 +591,7 @@ function resetFormulario(){
 }
 
 function validarCorreo(correo) { 
-  return /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(correo);
+  return /^\s*([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}\s*$/.test(correo);
 }
 
 
