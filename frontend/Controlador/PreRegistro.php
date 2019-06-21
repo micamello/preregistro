@@ -59,7 +59,7 @@ class Controlador_PreRegistro extends Controlador_Base {
         }
 
         $url = "";
-        $_SESSION['mostrar_exito'] = "Se ha registrado correctamente";
+        $_SESSION['mostrar_exito'] = "Se ha registrado correctamente. En pocos d\u00EDas se le enviar\u00E1 su usuario y contrase\u00F1a para que pueda acceder a la plataforma";
       }
     } catch (Exception $e) {
       setcookie('preRegistro', $tipo_usuario, time() + (86400 * 30), "/");

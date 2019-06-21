@@ -711,10 +711,10 @@ function searchAjax(obj){
         async: false,
         success:function(data){
             if(!$.trim(data)){
-            	val_retorno1 = 0;
+            	val_retorno1 = 1;
             }
             else{
-            	val_retorno1 = 1;
+            	val_retorno1 = 0;
             }
         },
         error: function (request, status, error) {

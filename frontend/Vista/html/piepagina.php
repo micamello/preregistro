@@ -30,7 +30,7 @@ if (isset($template_js) && is_array($template_js)){
           Swal.fire({            
             text: '".$sess_suc_msg."',
             imageUrl: '".PUERTO."://".HOST."/imagenes/logo-04.png',
-            imageWidth: 210,
+            imageWidth: 190,
             confirmButtonText: 'ACEPTAR',
             animation: true
           });

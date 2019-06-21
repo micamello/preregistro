@@ -952,7 +952,7 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    width: 32em;
+    width: 50em;
     max-width: 100%;
     padding: 1.25em;
     border: none;
