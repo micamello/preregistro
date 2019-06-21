@@ -762,3 +762,28 @@
 [2019/06/21 11:41:47] Utils::createSession empezo una nueva sesion
 [2019/06/21 11:41:47] SQL Query: SELECT * FROM mfo_genero
 [2019/06/21 11:41:47] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/21 11:53:03] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:53:03] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com'
+[2019/06/21 11:53:06] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:53:06] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 11:59:41] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:59:41] SQL Query: SELECT * FROM mfo_genero
+[2019/06/21 11:59:41] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/21 11:59:52] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:59:52] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/21 12:00:06] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:06] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:00:06] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:06] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:00:09] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:09] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:00:09] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:09] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:15] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:00:15] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:00:15] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:31:20] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:31:20] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:31:20] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:31:20] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
