@@ -396,3 +396,369 @@
 [2019/06/18 10:29:59] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edereder@hotmail.com'
 [2019/06/18 10:30:01] Utils::createSession empezo una nueva sesion
 [2019/06/18 10:30:01] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edereder@hotmail.com'
+[2019/06/20 08:17:54] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:17:57] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:17:57] SQL Query: SELECT * FROM mfo_genero
+[2019/06/20 08:17:57] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/20 08:18:07] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:18:07] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:18:07] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:18:42] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:18:42] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:18:42] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:18:45] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:18:45] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:18:45] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:19:15] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:19:15] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:19:15] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:19:16] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:19:16] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:19:16] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:21:53] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:21:53] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:21:53] Array
+(
+    [id] => 668
+    [nombres] => eder
+    [apellidos] => pozo
+    [correo] => edervpozo@gmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-18 09:50:45
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:23:47] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:23:47] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:23:47] Array
+(
+)
+
+[2019/06/20 08:24:09] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:09] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:24:09] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:09] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:24:09] Array
+(
+)
+
+[2019/06/20 08:24:09] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:09] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:24:09] Array
+(
+)
+
+[2019/06/20 08:24:09] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:09] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:24:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:24:11] Array
+(
+)
+
+[2019/06/20 08:24:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:24:11] Array
+(
+)
+
+[2019/06/20 08:24:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:24:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:24:11] SQL execute: INSERT INTO mfo_preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,fecha_nacimiento,id_genero,term_cond) VALUES ('Eder','Pozo','edervpr@hotmail.com','2','0706715661','0968597677','2019-06-20 08:24:11','1','1994-03-13','1','1')
+[2019/06/20 08:24:11] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
+[2019/06/20 08:24:13] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:26:02] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:26:02] SQL Query: SELECT * FROM mfo_genero
+[2019/06/20 08:26:02] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/20 08:26:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:26:11] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:26:11] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:31:01] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:31:01] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:31:01] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:31:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:31:11] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:31:11] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:34:14] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:14] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:34:14] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:34:22] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:22] SQL Query: SELECT * FROM mfo_genero
+[2019/06/20 08:34:22] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/20 08:34:22] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:22] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:34:22] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:34:26] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:26] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:34:26] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:34:29] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:29] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:34:29] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:34:32] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:34:32] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:34:32] Array
+(
+    [id] => 2767
+    [nombres] => Eder
+    [apellidos] => Pozo
+    [correo] => edervpr@hotmail.com
+    [tipo_doc] => 2
+    [dni] => 0706715661
+    [telefono] => 0968597677
+    [fecha] => 2019-06-20 08:24:11
+    [tipo_usuario] => 1
+    [fecha_nacimiento] => 1994-03-13
+    [id_genero] => 1
+    [id_sectorindustrial] => 
+    [term_cond] => 1
+)
+
+[2019/06/20 08:35:28] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:35:28] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:35:28] Array
+(
+)
+
+[2019/06/20 08:35:40] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:35:40] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:36:09] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:09] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:36:10] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:10] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:36:10] Array
+(
+)
+
+[2019/06/20 08:36:10] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:10] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:36:10] Array
+(
+)
+
+[2019/06/20 08:36:11] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:11] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:36:15] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:36:15] Array
+(
+)
+
+[2019/06/20 08:36:15] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:36:15] Array
+(
+)
+
+[2019/06/20 08:36:15] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:36:15] Utils::createSession empezo una nueva sesion
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 0706715661
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'edervpr@hotmail.com'
+[2019/06/20 08:36:15] SQL execute: INSERT INTO mfo_preregistro (nombres,apellidos,correo,tipo_doc,dni,telefono,fecha,tipo_usuario,fecha_nacimiento,id_genero,term_cond) VALUES ('Eder','Pozo','edervpr@hotmail.com','2','0706715661','0968597677','2019-06-20 08:36:15','1','1994-03-13','1','1')
+[2019/06/20 08:36:15] SQL Query: SELECT * FROM mfo_templateemail where nombre = 'PREREGISTRO_USUARIO' LIMIT 1
+[2019/06/20 08:36:20] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:41:44] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:41:47] Utils::createSession empezo una nueva sesion
+[2019/06/21 11:41:47] SQL Query: SELECT * FROM mfo_genero
+[2019/06/21 11:41:47] SQL Query: SELECT * FROM mfo_sectorindustrial
