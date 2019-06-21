@@ -256,7 +256,7 @@ if($('#documento').length){
 					crearMensajeError($(this), "Documento ingresado ya existe");
 				}
 				else if(searchAjax($(this)) == 2){
-					crearMensajeError(docCampo, "Verifique su conexión de red. Intente de nuevo.");
+					crearMensajeError($(this), "Verifique su conexión de red. Intente de nuevo.");
 				}
 			}
 			else{
@@ -352,7 +352,7 @@ if($('#correo').length){
 					crearMensajeError($(this), "El correo ingresado ya existe");
 				}
 				else if(searchAjax($(this)) == 2){
-					crearMensajeError(docCampo, "Verifique su conexión de red. Intente de nuevo.");
+					crearMensajeError($(this), "Verifique su conexión de red. Intente de nuevo.");
 				}
 			}
 			else{
@@ -508,7 +508,7 @@ if($('#documento').length){
 				crearMensajeError($('#documento'), "Documento ingresado ya existe");
 			}
 			else if(searchAjax($('#documento')) == 2){
-				crearMensajeError(docCampo, "Verifique su conexión de red. Intente de nuevo.");
+				crearMensajeError($('#documento'), "Verifique su conexión de red. Intente de nuevo.");
 			}
 		}
 		else{
@@ -555,7 +555,7 @@ if($('#correo').length){
 				crearMensajeError($('#correo'), "El correo ingresado ya existe");
 			}
 			else if(searchAjax($('#correo')) == 2){
-				crearMensajeError(docCampo, "Verifique su conexión de red. Intente de nuevo.");
+				crearMensajeError($('#correo'), "Verifique su conexión de red. Intente de nuevo.");
 			}
 		}
 		else{
