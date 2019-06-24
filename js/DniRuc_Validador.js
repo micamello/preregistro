@@ -49,7 +49,7 @@ function validarCedulaEcuador(valor, tipo){
 	if(tipo == 1){
 		longitud = 13;
 	}
-	if(provincia >= 1 && provincia <= 24){
+	if(provincia >= 1 && provincia <= 24 || provincia == 30){
 		if(valor.length == longitud){
 			digitos[0]  = valor.substr(0,1);         
 		    digitos[1]  = valor.substr(1,1);         
@@ -115,7 +115,7 @@ function validarRucPersonaNatural(valor, tipo){
 
 function validarRucPersonaJuridica(valor){
 	provincia = valor.substr(0,2);
-	if(provincia >= 1 && provincia <= 24){
+	if(provincia >= 1 && provincia <= 24 || provincia == 30){
 		digitos = [];consecutivo = [];
 		if(valor.length == 13){
 			digitos[0]  = valor.substr(0,1);         
@@ -166,7 +166,7 @@ function validarRucPersonaJuridica(valor){
 
 function validarRucInstitucionPublica(valor){
 	provincia = valor.substr(0,2);
-	if(provincia >= 1 && provincia <= 24){
+	if(provincia >= 1 && provincia <= 24 || provincia == 30){
 		digitos = [];consecutivo = [];
 		if(valor.length == 13){
 			digitos[0]  = valor.substr(0,1);         
