@@ -4,12 +4,12 @@
   <nav class="menu-timer navbar">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-6">
+        <div class="col-md-7 col-sm-4 col-xs-4">
               <a class="navbar-brand" href="https://www.micamello.com.ec/desarrollov3">
                   <img id="camello" style="padding-top: 20px;padding-left: 20px;" src="<?php echo PUERTO."://".HOST;?>/img_pre/logo.png"><br>
               </a>
           </div>
-        <div class="col-md-4 col-sm-6 col-xs-6">  
+        <div class="col-md-5 col-sm-8 col-xs-8">  
           <ul class="timer-bloque nav navbar-nav navbar-right">                
                   <div class="cont-rrss" id="regEmpMic">
                     <a href="<?php echo URL_FACEBOOK;?>" id="regEmpMic" target="_blank"><i class="timer-iconos fa fa-facebook"></i></a>

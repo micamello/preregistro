@@ -787,3 +787,117 @@
 [2019/06/21 12:31:20] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
 [2019/06/21 12:31:20] Utils::createSession empezo una nueva sesion
 [2019/06/21 12:31:20] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:34:46] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:34:46] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 12:34:46] Utils::createSession empezo una nueva sesion
+[2019/06/21 12:34:46] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:23:25] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:23:25] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:23:25] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:23:25] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:24:01] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:24:01] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:24:01] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:24:01] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:24:01] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:24:01] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:24:01] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:24:01] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:25:32] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:25:32] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:25:32] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:25:32] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:25:39] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:25:39] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:25:39] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:25:39] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:26:03] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:26:03] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:26:03] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:26:03] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:26:05] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:26:05] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:26:05] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:26:05] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:34:41] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:34:41] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:34:41] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:34:41] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:34:47] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:34:47] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 01:34:47] Utils::createSession empezo una nueva sesion
+[2019/06/21 01:34:47] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 02:32:54] Utils::createSession empezo una nueva sesion
+[2019/06/21 02:32:54] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/21 02:32:54] Utils::createSession empezo una nueva sesion
+[2019/06/21 02:32:54] SQL Query: SELECT * FROM mfo_preregistro WHERE correo = 'desarrollo@micamello.com.ec'
+[2019/06/24 08:47:27] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:29] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:29] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:47:29] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:47:33] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:33] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 3050630965
+[2019/06/24 08:47:33] Array
+(
+)
+
+[2019/06/24 08:47:47] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:47] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:47:47] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:47:47] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:47] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:47:47] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:47:50] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:47:50] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 3050630965
+[2019/06/24 08:47:50] Array
+(
+)
+
+[2019/06/24 08:48:06] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:06] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:06] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:06] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:06] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:07] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:07] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:07] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:12] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:12] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 3050630965
+[2019/06/24 08:48:12] Array
+(
+)
+
+[2019/06/24 08:48:44] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:44] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:44] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:44] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:44] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:44] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:52] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:52] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:52] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:52] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:52] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:48:52] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:48:56] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:48:56] SQL Query: SELECT * FROM mfo_preregistro WHERE dni = 3050630965
+[2019/06/24 08:48:56] Array
+(
+)
+
+[2019/06/24 08:50:29] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:50:29] SQL Query: SELECT * FROM mfo_genero
+[2019/06/24 08:50:29] SQL Query: SELECT * FROM mfo_sectorindustrial
+[2019/06/24 08:50:31] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:50:31] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:50:34] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:50:45] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:50:45] Utils::createSession empezo una nueva sesion
+[2019/06/24 08:52:24] Utils::createSession empezo una nueva sesion
