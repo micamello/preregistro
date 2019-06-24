@@ -102,6 +102,7 @@ class Controlador_PreRegistro extends Controlador_Base {
   }
 
   public function validarTipoDato($data){
+      $data['correo'] = trim(strtolower($data['correo']));
       if($data['tipo_usuario'] == 1){
         if (!preg_match('/^[\p{L} ]+$/u', html_entity_decode($data['nombre']))){
           throw new Exception("El campo solo acepta letras, tildes y espacios");
