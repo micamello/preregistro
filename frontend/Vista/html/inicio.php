@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-7 col-sm-4 col-xs-4">
-              <a class="navbar-brand" href="https://www.micamello.com.ec/desarrollov3">
+              <a class="navbar-brand" href="<?php echo PUERTO."://".HOST;?>/">
                   <img id="camello" style="padding-top: 20px;padding-left: 20px;" src="<?php echo PUERTO."://".HOST;?>/img_pre/logo.png"><br>
               </a>
           </div>
