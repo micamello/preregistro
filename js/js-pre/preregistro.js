@@ -341,9 +341,12 @@ if($('#correo').length){
 			event.preventDefault();
 		}
 	});
+	$('#correo').on('keyup', function(){
+		$(this).val($(this).val().toLowerCase());
+	})
 	$('#correo').on('blur', function(){
 		if($(this).val() != ""){
-			$(this).val($(this).val().trim());
+			$(this).val($(this).val().trim().toLowerCase());
 			if(validarCorreo($(this).val())){
 				if(searchAjax($(this)) == 1){
 					eliminarMensajeError($(this));
@@ -627,7 +630,7 @@ function resetFormulario(){
 }
 
 function validarCorreo(correo) { 
-  return /^\s*([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}\s*$/.test(correo);
+  return /^([a-zA-Z0-9\+_\-]+)(\.[a-zA-Z0-9\+_\-]+)*@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,6}$/.test(correo);
 }
 
 

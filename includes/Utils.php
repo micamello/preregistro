@@ -44,7 +44,7 @@ class Utils{
   }
   
   static public function es_correo_valido($email){
-    $result = preg_match("/^\s*([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}\s*$/",$email);
+    $result = preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/",$email);
     return $result;
   }
 
